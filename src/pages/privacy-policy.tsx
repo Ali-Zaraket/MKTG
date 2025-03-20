@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <Wrapper2>
       <div className="container mx-auto px-4 py-8 max-w-4xl font-inter">
-        <div className="my-8 text-center">
+        <div className="my-8">
           <h1 className="text-5xl font-bold text-primary">Privacy Policy</h1>
           <p className="text-sm text-gray-600 mt-2">Last Updated: October 12, 2024</p>
         </div>

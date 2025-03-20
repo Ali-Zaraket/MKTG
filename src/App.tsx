@@ -3,11 +3,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import NotFound from "./pages/not-found";
 import RootLayout from "./components/layouts/root";
+import TraineeDiscount from "./pages/trainee-discount";
+import UserGuide from "./pages/user-guide";
+import TermsOfService from "./pages/terms-of-service";
+import PrivacyPolicy from "./pages/privacy-policy";
 
-const TraineeDiscount = React.lazy(() => import("./pages/trainee-discount"));
-const UserGuide = React.lazy(() => import("./pages/user-guide"));
-const TermsOfService = React.lazy(() => import("./pages/terms-of-service"));
-const PrivacyPolicy = React.lazy(() => import("./pages/privacy-policy"));
+// const TraineeDiscount = React.lazy(() => import("./pages/trainee-discount"));
+// const UserGuide = React.lazy(() => import("./pages/user-guide"));
+// const TermsOfService = React.lazy(() => import("./pages/terms-of-service"));
+// const PrivacyPolicy = React.lazy(() => import("./pages/privacy-policy"));
 
 export default function App() {
   return (

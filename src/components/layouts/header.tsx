@@ -109,23 +109,23 @@ import Button from "../ui/button";
 
 const navData = [
   {
-    link: "#features",
+    link: "/#features",
     title: "Features",
   },
   {
-    link: "#previews",
+    link: "/#previews",
     title: "Previews",
   },
   {
-    link: "#pricing",
+    link: "/#pricing",
     title: "Pricing",
   },
   {
-    link: "#team",
+    link: "/#team",
     title: "Team",
   },
   {
-    link: "#faqs",
+    link: "/#faqs",
     title: "FAQs",
   },
 ];
@@ -133,7 +133,12 @@ const navData = [
 function RightSection() {
   return (
     <div className="flex gap-x-4">
-      <NavLink link="/login" title="Log in" className="!flex items-center justify-center" />
+      <NavLink
+        link="https://imageassist-28638.web.app/#/login"
+        target="_blank"
+        title="Log in"
+        className="items-center justify-center !hidden sm:!flex"
+      />
       <Button
         variant="solid"
         color="primary"

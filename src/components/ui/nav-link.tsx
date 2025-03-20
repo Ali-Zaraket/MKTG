@@ -1,6 +1,11 @@
 import clsx from "clsx";
 
-export default function NavLink({ link, title, className }: { link: string; title: string; className?: string }) {
+export default function NavLink({
+  link,
+  title,
+  className,
+  ...props
+}: { link: string; title: string; className?: string } & React.ComponentPropsWithoutRef<"a">) {
   return (
     <a
       className={clsx(
@@ -8,6 +13,7 @@ export default function NavLink({ link, title, className }: { link: string; titl
         className
       )}
       href={link}
+      {...props}
     >
       {title}
     </a>

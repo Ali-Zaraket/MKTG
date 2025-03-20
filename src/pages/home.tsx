@@ -2,6 +2,8 @@ import Hero from "../components/home/hero";
 import DownloadApp from "../components/home/download-app";
 import Solutions from "../components/home/solutions";
 import Team from "../components/home/team";
+import Pricing from "../components/home/pricing";
+
 export default function Home() {
   return (
     <>
@@ -9,6 +11,7 @@ export default function Home() {
       <Solutions />
       <Team />
       <DownloadApp />
+      <Pricing />
     </>
   );
 }

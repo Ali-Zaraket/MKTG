@@ -8,7 +8,7 @@ const features = [
     title: "SmartFrames Technology",
     description:
       "As easy as mobile check deposit, and  built to meet plastic surgery society guidelines, 50+ full body SmartFrames ensure images are consistent and efficient. ImageAssist does the work so you don’t have to.",
-    image: "/research-bg.png",
+    image: "/",
     disabled: false,
   },
   {
@@ -55,7 +55,11 @@ export default function Solutions() {
   return (
     <section id="features" className="relative w-full overflow-hidden bg-[url('/bg.png')] bg-cover bg-center py-20">
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8 relative">
-        <SectionTitle reverse={true} title="Capture. " />
+        <SectionTitle reverse={true} title="Capture. Manage. Secure." />
+
+        <p className="mt-8 text-lg tracking-tight text-neutral font-inter text-center">
+          The future of clinical photography is here.
+        </p>
 
         <Tab.Group
           as="div"
@@ -102,16 +106,16 @@ export default function Solutions() {
                   ))}
                 </Tab.List>
               </div>
-              <Tab.Panels className="lg:col-span-7">
+              <Tab.Panels className="lg:col-span-7 h-full">
                 {features.map((feature) => (
-                  <Tab.Panel key={feature.title} unmount={false}>
+                  <Tab.Panel key={feature.title} unmount={false} className="h-full">
                     <div className="relative sm:px-6 lg:hidden">
                       <div className="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-neutral/10 ring-1 ring-inset ring-neutral/10 sm:inset-x-0 sm:rounded-t-xl" />
                       <p className="relative mx-auto max-w-2xl text-base text-neutral sm:text-center">
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[45rem]">
+                    <div className="mt-10 h-full overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[45rem] bg-[url('/light-bg.png')] bg-cover bg-center">
                       <img
                         className="w-full"
                         src={feature.image}
