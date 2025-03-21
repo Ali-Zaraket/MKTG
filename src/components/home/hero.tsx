@@ -22,7 +22,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/App+store.png" alt="" width="200" height="75" />
+                <img src="/App+store.png" alt="" width="150" />
               </a>
 
               <a href="https://www.youtube.com/watch?v=jHBM3hYFi1k" target="_blank" rel="noopener noreferrer">

@@ -8,44 +8,41 @@ const screenshotProfitLoss = "";
 
 const features = [
   {
-    name: "Teams",
-    summary: "Understand Bitcoin Macro like never before.",
+    name: "Built for Teams",
+    summary: "Easily manage your entire clinic’s photo workflow, no matter the size.",
     description:
-      "Get a holistic look at the Bitcoin Economy and all the macro and moving parts that impact the network and future of finance.",
+      "From solo providers to multi-location clinics, ImageAssist lets you add team members, manage permissions, and collaborate with ease—all from one secure account.",
     image: screenshotProfitLoss,
-    icon: "currency_bitcoin",
+    icon: "workspaces",
   },
   {
-    name: "Bitcoin Layers",
-    summary: "Stay on top of Bitcoin Scaling Solutions.",
+    name: "Seamless EMR Integrations",
+    summary: "Connect ImageAssist with your existing systems.",
     description:
-      "Explore Stacks, Rootstock, Lightning Network, sidechains, and their impact on faster transactions & wider adoption.",
+      "Our platform integrates with major EMRs like 4D EMR, ARCC, and more. Easily export photos to your EMR or HIPAA-compliant cloud drive—no extra steps, no stress.",
     image: screenshotInventory,
-    icon: "stacks",
+    icon: "hub",
   },
   {
-    name: "Bitcoin Projects",
-    summary: "Deep dive into the top Bitcoin Dapps on the internet.",
+    name: "HIPAA-Compliant & Secure",
+    summary: "Patient privacy is non-negotiable.",
     description:
-      "Go beyond finance. Discover real-world use cases of innovative Bitcoin Dapps shaping the future of DeFi, Ordinals, NFTs, and more.",
+      "With HIPAA-compliant cloud storage and encrypted data transfer, ImageAssist ensures your patient photos are safe, secure, and never stored on personal devices.",
     image: screenshotContacts,
-    icon: "web_asset",
+    icon: "verified_user",
   },
 ];
 
 function Feature({ feature, className, ...props }: { feature: any; className: string; props?: any }) {
   return (
     <div className={clsx(className)} {...props}>
-      <div className={clsx("w-10 rounded-lg bg-accent/85")}>
-        <span
-          aria-hidden="true"
-          className="h-10 w-10 text-slate-50 flex items-center justify-center font-bold material-symbols-outlined"
-        >
+      <div className={clsx("w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center")}>
+        <span aria-hidden="true" className="text-primary font-bold material-symbols-outlined">
           {feature.icon}
         </span>
       </div>
       <h3 className={clsx("mt-6 text-sm font-medium text-accent/90")}>{feature.name}</h3>
-      <p className="mt-2 font-display text-xl text-slate-900">{feature.summary}</p>
+      <p className="mt-2 min-h-14 font-display text-xl text-slate-900">{feature.summary}</p>
       <p className="mt-4 text-sm text-slate-600 font-inter">{feature.description}</p>
     </div>
   );
@@ -132,17 +129,17 @@ function ResearchDesktop() {
 
 export default function Research() {
   return (
-    <section id="research" className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32">
+    <section id="previews" className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
         <div className="mx-auto md:text-center">
           <h2 className="font-medium text-2xl sm:text-5xl tracking-tight text-primary">
-            Enterprise grade for any size team
+            Enterprise-Grade Clinical Photography for Teams of Any Size
           </h2>
           <br />
           <p className="font-inter text-lg tracking-tight">
-            ImageAssist makes clinical photography simple, precise, and secure. Incubated at Vanderbilt University
-            Medical Center and designed for healthcare professionals, our intuitive iOS app streamlines photo capture,
-            management, and storage—so you can focus on patient care.
+            Incubated at Vanderbilt University Medical Center and designed by healthcare professionals, our intuitive
+            platform streamlines photo capture, management, and storage—so you can focus on what matters most: patient
+            care.
           </p>
         </div>
         <ResearchMobile />

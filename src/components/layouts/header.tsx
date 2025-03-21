@@ -157,7 +157,7 @@ export default function Header() {
       <Wrapper>
         <div className="flex items-center justify-between">
           <a href="/">
-            <img src="/ImageAssist Logo.png" alt="ImageAssist Logo" width={200} height={100} />
+            <img src="/ImageAssist Logo.png" alt="ImageAssist Logo" width={250} height={125} />
           </a>
 
           <nav className="hidden md:flex md:gap-x-6">

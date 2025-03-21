@@ -53,15 +53,6 @@ function Card({ pricingCardData, index }: { pricingCardData: any; index: number 
         isMiddle ? "bg-[url('/bg.png')] bg-cover bg-center" : "bg-transparent"
       }`}
     >
-      {/* {opposite ? (
-        <img
-          className="absolute invert right-0 bottom-0 opacity-90 -z-10 h-full"
-          src="/background-call-to-action.jpg"
-          alt=""
-          draggable="false"
-          loading="lazy"
-        />
-      ) : null} */}
       <span className="absolute top-2 left-2 bg-accent/10 text-accent px-2 w-fit mx-auto">
         {pricingCardData?.label && pricingCardData.label}
       </span>
@@ -125,7 +116,7 @@ export default function Pricing() {
       id="pricing"
       aria-label="Pricing"
       // className="py-20 sm:py-44 text-center relative isolate z-20 -scroll-mt-16 bg-[url('/bg.png')] bg-cover bg-center"
-      className="py-20 sm:py-44 text-center relative isolate z-20 -scroll-mt-16"
+      className="py-20 sm:py-24 text-center relative isolate z-20 -scroll-mt-16"
     >
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
         <div className="md:text-center">

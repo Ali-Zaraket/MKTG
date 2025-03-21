@@ -35,12 +35,12 @@ export default function Team() {
     <section id="team" className="py-16">
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
         <SectionTitle title="Meet Our Team" reverse={false} />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-24 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mt-12">
           {team.map((member) => (
             <div key={member.name}>
               <img src={member.image} alt={member.name} className="object-contain aspect-square rounded-lg" />
-              <h3 className="text-2xl font-semibold mt-8">{member.name}</h3>
-              <p className="text-gray-600 mt-2 text-lg">{member.role}</p>
+              <h3 className="text-2xl font-semibold mt-4">{member.name}</h3>
+              <p className="text-gray-600 text-sm">{member.role}</p>
               <p className="text-gray-600 mt-4">{member.description}</p>
             </div>
           ))}

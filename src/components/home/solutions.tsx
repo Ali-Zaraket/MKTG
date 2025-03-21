@@ -8,28 +8,30 @@ const features = [
     title: "SmartFrames Technology",
     description:
       "As easy as mobile check deposit, and  built to meet plastic surgery society guidelines, 50+ full body SmartFrames ensure images are consistent and efficient. ImageAssist does the work so you don’t have to.",
-    image: "/",
+    image: "/features/SmartFrame.gif",
     disabled: false,
   },
   {
     title: "Background Removal",
     description:
       "No need for special staff or space! ImageAssist utilizes the your iPad or iPhone camera to deliver high quality and perfectly clear images by automatically subtracting the subjects’ background.",
-    image: "/arkadiko-dash.png",
+    image: "/features/BgRemoval.gif",
+
     disabled: false,
   },
   {
-    title: "EMR Integration",
+    title: "Patient Management",
     description:
       "ImageAssist is available as a standalone iOS app or a fully integrated solution via our API. It currently integrates with Epic, 4D EMR, Apollo, and Nextech and can be customized to route photos to any EMR or platform.",
-    image: "/query-bg.png",
+    image: "/features/PatientManagement.gif",
+
     disabled: false,
   },
   {
     title: "HIPAA-Compliant",
     description:
       "Patients trust clinics to protect their data. ImageAssist’s HIPAA-compliant cloud storage keeps photos private, secure, and separate from personal galleries—ensuring professionalism and patient trust.",
-    image: "/",
+    image: "/features/SmartFrame.gif",
     disabled: false,
   },
 ];
@@ -63,7 +65,7 @@ export default function Solutions() {
 
         <Tab.Group
           as="div"
-          className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
+          className="mt-16 mb-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
           vertical={tabOrientation === "vertical"}
         >
           {({ selectedIndex }: { selectedIndex: number }) => (
@@ -108,16 +110,18 @@ export default function Solutions() {
               </div>
               <Tab.Panels className="lg:col-span-7 h-full">
                 {features.map((feature) => (
-                  <Tab.Panel key={feature.title} unmount={false} className="h-full">
+                  <Tab.Panel key={feature.title} unmount={false} className="h-96 pb-12 sm:pb-0 sm:h-full">
                     <div className="relative sm:px-6 lg:hidden">
                       <div className="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-neutral/10 ring-1 ring-inset ring-neutral/10 sm:inset-x-0 sm:rounded-t-xl" />
                       <p className="relative mx-auto max-w-2xl text-base text-neutral sm:text-center">
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 h-full overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[45rem] bg-[url('/light-bg.png')] bg-cover bg-center">
+                    <div className="h-full mt-4 sm:mt-0 relative rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:w-[45rem]">
+                      <div className="absolute inset-0 sm:-top-14 sm:-bottom-14 bg-neutral sm:w-[150%] rounded-2xl" />
+
                       <img
-                        className="w-full"
+                        className="absolute inset-0 sm:-top-14 sm:-bottom-14 bg-neutral sm:w-[150%] rounded-2xl"
                         src={feature.image}
                         alt=""
                         sizes="(min-width: 1024px) 45rem, (min-width: 640px) 100vw, 45rem"
