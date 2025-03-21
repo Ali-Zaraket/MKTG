@@ -2,7 +2,7 @@ import NavLink from "../ui/nav-link";
 
 const navData = [
   {
-    link: "/trainee-discount",
+    link: "/traineediscount",
     title: "Trainee Discount",
   },
   {
@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="py-4 md:py-16">
           <div className="w-full flex items-center justify-center">
             <a href="/">
-              <img src="/ImageAssist Logo.png" alt="ImageAssist Logo" width={200} height={100} />
+              <img src="/ImageAssist Logo.png" loading="lazy" alt="ImageAssist Logo" width={200} height={100} />
             </a>
           </div>
           <nav className="mt-10 text-sm" aria-label="quick links">

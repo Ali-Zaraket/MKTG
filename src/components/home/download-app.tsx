@@ -17,7 +17,7 @@ export default function DownloadApp() {
             rel="noopener noreferrer"
             className="block mx-auto w-fit mt-12"
           >
-            <img src="/App+store-light.png" alt="" width="150" />
+            <img src="/App+store-light.png" alt="" width="150" loading="lazy" />
           </a>
         </div>
       </div>

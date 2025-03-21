@@ -31,7 +31,7 @@ const features = [
     title: "HIPAA-Compliant",
     description:
       "Patients trust clinics to protect their data. ImageAssist’s HIPAA-compliant cloud storage keeps photos private, secure, and separate from personal galleries—ensuring professionalism and patient trust.",
-    image: "/features/SmartFrame.gif",
+    image: "/features/HIPAA.gif",
     disabled: false,
   },
 ];
@@ -70,7 +70,7 @@ export default function Solutions() {
         >
           {({ selectedIndex }: { selectedIndex: number }) => (
             <>
-              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5 font-inter">
+              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 overflow-visible sm:pb-0 lg:col-span-5 font-inter">
                 <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-6 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
@@ -88,7 +88,7 @@ export default function Solutions() {
                           className={clsx(
                             "font-display text-lg ui-not-focus-visible:outline-none whitespace-nowrap",
                             selectedIndex === featureIndex
-                              ? "text-slate-700 lg:text-neutral"
+                              ? "text-slate-700 lg:text-neutral outline-none"
                               : "text-blue-100 hover:text-neutral lg:text-neutral"
                           )}
                         >
@@ -117,15 +117,14 @@ export default function Solutions() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="h-full mt-4 sm:mt-0 relative rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:w-[45rem]">
-                      <div className="absolute inset-0 sm:-top-14 sm:-bottom-14 bg-neutral sm:w-[150%] rounded-2xl" />
+                    <div className="h-full mt-4 sm:mt-0 relative rounded-xl bg-neutral shadow-xl shadow-blue-900/20 sm:w-auto lg:w-[45rem]">
+                      <div className="hidden lg:block absolute inset-0 sm:-top-14 sm:-bottom-14 bg-neutral sm:w-[150%] rounded-2xl" />
 
                       <img
-                        className="absolute inset-0 sm:-top-14 sm:-bottom-14 bg-neutral sm:w-[150%] rounded-2xl"
+                        className="relative m-auto mt-10 lg:ml-[20%] h-full object-cover rounded-2xl"
                         src={feature.image}
                         alt=""
                         sizes="(min-width: 1024px) 45rem, (min-width: 640px) 100vw, 45rem"
-                        loading="lazy"
                       />
                     </div>
                   </Tab.Panel>

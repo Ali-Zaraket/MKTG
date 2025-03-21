@@ -37,6 +37,13 @@ const quotes = [
       "ImageAssist makes sharing standardized patient photos easy and secure, improving team communication, decision-making, and workflow efficiency",
     image: "/quotes/Clare+Gargaro.png",
   },
+  {
+    name: "Nicolas Biro, MD",
+    company: "Pacific Eye Institute",
+    quote:
+      "ImageAssist makes patient photos fast, professional, and HIPAA-compliant. It’s an essential tool for any oculoplastic practice.",
+    image: "/quotes/Nicolas+Biro.png",
+  },
 ];
 
 function Quote({ quote }: { quote: (typeof quotes)[number] }) {
@@ -88,7 +95,7 @@ export default function Quotes() {
           </div>
           <div className="flex flex-col gap-8">
             <Quote quote={quotes[4]} />
-            {/* <Quote quote={quotes[5]} /> */}
+            <Quote quote={quotes[5]} />
           </div>
         </div>
       </Wrapper>

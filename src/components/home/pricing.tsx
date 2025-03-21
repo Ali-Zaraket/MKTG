@@ -50,29 +50,31 @@ function Card({ pricingCardData, index }: { pricingCardData: any; index: number 
   return (
     <section
       className={`relative flex flex-col text-start rounded-3xl pb-8 pt-8 md:pt-10 md:pb-20  px-6 sm:px-8 max-w-[500px] overflow-hidden ${
-        isMiddle ? "bg-[url('/bg.png')] bg-cover bg-center" : "bg-transparent"
+        isMiddle ? "bg-neutral" : "bg-transparent"
       }`}
     >
       <span className="absolute top-2 left-2 bg-accent/10 text-accent px-2 w-fit mx-auto">
         {pricingCardData?.label && pricingCardData.label}
       </span>
-      <p className={`order-first font-inter ${isMiddle ? "text-gray-50" : "text-slate-900"} mt-4`}>
+      <p className={`order-first font-inter ${!isMiddle ? "text-neutral" : "text-slate-900"} mt-4`}>
         {pricingCardData.title}
       </p>
 
       <p
         className={`order-first font-display text-4xl font-light tracking-tight ${
-          isMiddle ? "text-white" : "text-accent"
+          !isMiddle ? "text-neutral" : "text-accent"
         } mb-8 mt-4`}
       >
         {pricingCardData.price}
       </p>
-      <ul role="list" className="order-last mt-12 flex flex-col gap-y-3 text-base text-slate-200">
+      <ul role="list" className="order-last mt-12 flex flex-col gap-y-3 text-base text-neutral">
         {pricingCardData.list.map((listItem: any, index: number) => (
           <li className="flex" key={`${listItem}-${index}`}>
             <svg
               aria-hidden="true"
-              className={`h-6 w-6 flex-none fill-current stroke-current ${isMiddle ? "text-gray-50" : "text-gray-900"}`}
+              className={`h-6 w-6 flex-none fill-current stroke-current ${
+                !isMiddle ? "text-neutral" : "text-gray-900"
+              }`}
             >
               <path
                 d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
@@ -88,7 +90,7 @@ function Card({ pricingCardData, index }: { pricingCardData: any; index: number 
                 strokeLinejoin="round"
               ></circle>
             </svg>
-            <span className={`ml-4 text-start font-inter ${isMiddle ? "text-gray-50" : "text-gray-500"}`}>
+            <span className={`ml-4 text-start font-inter ${!isMiddle ? "text-neutral" : "text-gray-500"}`}>
               {listItem}
             </span>
           </li>
@@ -96,10 +98,10 @@ function Card({ pricingCardData, index }: { pricingCardData: any; index: number 
       </ul>
 
       <Button
-        variant={isMiddle ? "outline" : "solid"}
-        color={isMiddle ? "neutral" : "primary"}
+        variant={!isMiddle ? "outline" : "solid"}
+        color={!isMiddle ? "neutral" : "primary"}
         aria-label="Get started"
-        className={`py-4 ${isMiddle ? "bg-slate-50 !text-accent !ring-0 hover:bg-gray-200 font-semibold" : ""}`}
+        className={`py-4 ${!isMiddle ? "bg-neutral !text-accent !ring-0 hover:bg-neutral/90 font-semibold" : ""}`}
         onClick={() => {
           window.open("https://imageassist-28638.web.app/#/register", "_blank");
         }}
@@ -115,14 +117,14 @@ export default function Pricing() {
     <section
       id="pricing"
       aria-label="Pricing"
-      // className="py-20 sm:py-44 text-center relative isolate z-20 -scroll-mt-16 bg-[url('/bg.png')] bg-cover bg-center"
-      className="py-20 sm:py-24 text-center relative isolate z-20 -scroll-mt-16"
+      className="py-20 sm:py-44 text-center relative isolate z-20 -scroll-mt-16 bg-[url('/bg.png')] bg-cover bg-center"
+      // className="py-20 sm:py-24 text-center relative isolate z-20 -scroll-mt-16"
     >
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
         <div className="md:text-center">
-          <SectionTitle title="Simple pricing, for everyone." reverse={false} />
+          <SectionTitle title="Simple pricing, for everyone." reverse={true} />
 
-          <p className="mt-8 text-lg tracking-tight font-inter">
+          <p className="mt-8 text-lg text-neutral tracking-tight font-inter">
             It doesn’t matter what size your business is, our software won’t work well for you.
           </p>
         </div>

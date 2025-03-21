@@ -15,7 +15,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<RootLayout />}>
             <Route index element={<Home />} />
-            <Route path="/trainee-discount" element={<TraineeDiscount />} />
+            <Route path="/traineediscount" element={<TraineeDiscount />} />
             <Route path="/userguide" element={<UserGuide />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
