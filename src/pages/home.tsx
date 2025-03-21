@@ -13,8 +13,8 @@ export default function Home() {
       <Research />
       <DownloadApp />
       <Quotes />
-      <Team />
       <Pricing />
+      <Team />
     </>
   );
 }
