@@ -5,6 +5,8 @@ import Team from "../components/home/team";
 import Pricing from "../components/home/pricing";
 import Research from "../components/home/research";
 import Quotes from "../components/home/quotes";
+import Contact from "../components/home/contact";
+
 export default function Home() {
   return (
     <>
@@ -15,6 +17,7 @@ export default function Home() {
       <Quotes />
       <Pricing />
       <Team />
+      <Contact />
     </>
   );
 }

@@ -113,10 +113,6 @@ const navData = [
     title: "Features",
   },
   {
-    link: "/#previews",
-    title: "Previews",
-  },
-  {
     link: "/#pricing",
     title: "Pricing",
   },
@@ -127,6 +123,10 @@ const navData = [
   {
     link: "/#faqs",
     title: "FAQs",
+  },
+  {
+    link: "/#contact",
+    title: "Contact",
   },
 ];
 

@@ -14,7 +14,7 @@ const variantStyles = {
     secondary:
       "bg-secondary text-white hover:bg-secondary/90 hover:text-white active:bg-secondary/90 active:text-white focus-visible:outline-secondary disabled:pointer-events-none",
     neutral:
-      "bg-neutral text-white hover:bg-neutral/90 hover:text-primary active:bg-neutral/90 active:text-primary focus-visible:outline-neutral disabled:pointer-events-none",
+      "bg-neutral text-primary hover:bg-neutral/90 hover:text-primary active:bg-neutral/90 active:text-primary focus-visible:outline-neutral disabled:pointer-events-none",
   },
   outline: {
     primary: "ring-primary text-primary hover:text-primary/90 hover:ring-primary/90 active:ring-primary/90",
