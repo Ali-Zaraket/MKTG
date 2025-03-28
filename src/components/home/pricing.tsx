@@ -1,3 +1,4 @@
+import { useState } from "react";
 import SectionTitle from "../common/section-title";
 import Button from "../ui/button";
 
@@ -5,7 +6,7 @@ export const pricingData = {
   data: [
     {
       title: "Individual",
-      price: "$39/user/month",
+      price: "$40/month",
       list: [
         "Capture clinical photos with SmartFrames™",
         "Automatic background removal",
@@ -14,11 +15,11 @@ export const pricingData = {
         "Unlimited users",
         "iOS app—works on iPhone, iPad, and Web",
       ],
+      redirect: "https://imageassist-28638.web.app/#/register",
     },
     {
       title: "Teams",
       price: "$35/user/month",
-
       list: [
         "Everything in Individual",
         "Centralized team photo management",
@@ -27,11 +28,17 @@ export const pricingData = {
         "Easy EMR integrations, including 4D EMR & ARCC",
         "Volume pricing available and flexible team scaling—add/remove users anytime",
       ],
+      redirect: "https://imageassist-28638.web.app/#/register",
+      tiers: [
+        { label: "2 users", price: "$80/practice" },
+        { label: "3-5 users", price: "$150/practice" },
+        { label: "6-10 users", price: "$250/practice" },
+        { label: "11-20 users", price: "$400/practice" },
+      ],
     },
     {
       title: "Enterprise",
       price: "Contact Sales",
-
       list: [
         "Everything in Teams",
         "Dedicated enterprise onboarding",
@@ -40,34 +47,94 @@ export const pricingData = {
         "Admin & reporting dashboards",
         "Priority customer support",
       ],
+      redirect: "https://form.typeform.com/to/a377DoS0",
     },
   ],
 };
 
 function Card({ pricingCardData, index }: { pricingCardData: any; index: number }) {
+  const [tierIdx, setTierIdx] = useState(1);
+
   const isMiddle = index % 2 !== 0;
+
+  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = parseInt(e.target.value, 10);
+    setTierIdx(value);
+  };
 
   return (
     <section
-      className={`relative flex flex-col text-start rounded-3xl pb-8 pt-8 md:pt-10 md:pb-20  px-6 sm:px-8 max-w-[500px] overflow-hidden ${
+      className={`relative flex flex-col text-start rounded-3xl pb-8 pt-8 md:pt-10 px-6 sm:px-8 max-w-[500px] overflow-hidden ${
         isMiddle ? "bg-neutral" : "bg-transparent"
       }`}
     >
       <span className="absolute top-2 left-2 bg-accent/10 text-accent px-2 w-fit mx-auto">
         {pricingCardData?.label && pricingCardData.label}
       </span>
-      <p className={`order-first font-inter ${!isMiddle ? "text-neutral" : "text-slate-900"} mt-4`}>
+      <p className={`order-first font-inter ${!isMiddle ? "text-neutral" : "text-slate-900"}`}>
         {pricingCardData.title}
       </p>
 
-      <p
-        className={`order-first font-display text-4xl font-light tracking-tight ${
-          !isMiddle ? "text-neutral" : "text-accent"
-        } mb-8 mt-4`}
-      >
-        {pricingCardData.price}
-      </p>
-      <ul role="list" className="order-last mt-12 flex flex-col gap-y-3 text-base text-neutral">
+      {pricingCardData.tiers ? (
+        <>
+          <div
+            className={`order-first font-display text-4xl font-light tracking-tight ${
+              !isMiddle ? "text-neutral" : "text-accent"
+            } mt-4`}
+          >
+            {pricingCardData.tiers[tierIdx].price}
+
+            <br />
+            <span className="text-base">{pricingCardData.tiers[tierIdx].label}</span>
+          </div>
+          <div className="flex flex-col items-center my-4">
+            <div className="relative w-full">
+              {/* Tooltip */}
+              {/* <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-4 py-2 bg-gray-800 text-white text-sm rounded-lg">
+              {pricingCardData.tiers[tierIdx].label} - {pricingCardData.tiers[tierIdx].price}
+            </div> */}
+
+              {/* Slider */}
+              <input
+                type="range"
+                min="0"
+                max={pricingCardData.tiers.length - 1}
+                step="1"
+                value={tierIdx}
+                onChange={handleSliderChange}
+                className="w-full cursor-pointer"
+              />
+
+              {/* Custom Track */}
+              {/* <div className="absolute left-0 right-0 top-1/2 h-2 bg-gray-300 rounded-full transform -translate-y-1/2"></div> */}
+
+              {/* Custom Thumb */}
+              {/* <div
+              className="absolute top-1/2 h-6 w-6 bg-blue-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 transition-all"
+              style={{
+                left: `${(tierIdx / (pricingCardData.tiers.length - 1)) * 100}%`,
+              }}
+            ></div> */}
+            </div>
+
+            {/* Labels Below Slider */}
+            <div className="flex justify-between w-full text-sm">
+              <div className="text-center">2 users</div>
+              <div className="text-center">20 users</div>
+            </div>
+          </div>
+        </>
+      ) : (
+        <p
+          className={`order-first font-display text-4xl font-light tracking-tight ${
+            !isMiddle ? "text-neutral" : "text-accent"
+          } mb-8 mt-4`}
+        >
+          {pricingCardData.price}
+        </p>
+      )}
+
+      <ul role="list" className="order-last mt-6 flex flex-col gap-y-3 text-base text-neutral">
         {pricingCardData.list.map((listItem: any, index: number) => (
           <li className="flex" key={`${listItem}-${index}`}>
             <svg
@@ -103,7 +170,7 @@ function Card({ pricingCardData, index }: { pricingCardData: any; index: number 
         aria-label="Get started"
         className={`py-4 ${!isMiddle ? "bg-neutral !text-accent !ring-0 hover:bg-neutral/90 font-semibold" : ""}`}
         onClick={() => {
-          window.open("https://imageassist-28638.web.app/#/register", "_blank");
+          window.open(pricingCardData.redirect, "_blank");
         }}
       >
         Get started
@@ -122,10 +189,11 @@ export default function Pricing() {
     >
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
         <div className="md:text-center">
-          <SectionTitle title="Simple pricing, for everyone." reverse={true} />
+          <SectionTitle title="Simple, Scalable Pricing for Every Practice" reverse={true} />
 
           <p className="mt-8 text-lg text-neutral tracking-tight font-inter">
-            It doesn’t matter what size your business is, our software won’t work well for you.
+            Whether you're a solo provider or a growing healthcare team, ImageAssist offers flexible plans designed to
+            fit your workflow and budget.
           </p>
         </div>
         <div className="-mx-4 mt-16 grid items-stretch max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-12 place-items-center">

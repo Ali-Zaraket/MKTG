@@ -3,6 +3,20 @@ import Wrapper2 from "../components/layouts/wrapper2";
 export default function PrivacyPolicy() {
   return (
     <Wrapper2>
+      <title>Privacy Policy — ImageAssist</title>
+
+      <link rel="canonical" href="https://www.imageassist.com/privacy-policy" />
+      <meta property="og:site_name" content="ImageAssist" />
+      <meta property="og:title" content="Privacy Policy — ImageAssist" />
+      <meta property="og:url" content="https://www.imageassist.com/privacy-policy" />
+      <meta property="og:type" content="website" />
+      <meta itemProp="name" content="Privacy Policy — ImageAssist" />
+      <meta itemProp="url" content="https://www.imageassist.com/privacy-policy" />
+      <meta name="twitter:title" content="Privacy Policy — ImageAssist" />
+      <meta name="twitter:url" content="https://www.imageassist.com/privacy-policy" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="description" content="" />
+
       <div className="container mx-auto px-4 py-8 max-w-4xl font-inter">
         <div className="my-8">
           <h1 className="text-5xl font-bold text-primary">Privacy Policy</h1>

@@ -7,14 +7,14 @@ const features = [
   {
     title: "SmartFrames Technology",
     description:
-      "As easy as mobile check deposit, and  built to meet plastic surgery society guidelines, 50+ full body SmartFrames ensure images are consistent and efficient. ImageAssist does the work so you don’t have to.",
+      "As easy as mobile check deposit, and built to meet plastic surgery society guidelines, 50+ full body SmartFrames ensure images are consistent and efficient. ImageAssist does the work so you don't have to.",
     image: "/features/SmartFrame.gif",
     disabled: false,
   },
   {
     title: "Background Removal",
     description:
-      "No need for special staff or space! ImageAssist utilizes the your iPad or iPhone camera to deliver high quality and perfectly clear images by automatically subtracting the subjects’ background.",
+      "No need for special staff or space! ImageAssist utilizes the your iPad or iPhone camera to deliver high quality and perfectly clear images by automatically subtracting the subjects' background.",
     image: "/features/BgRemoval.gif",
 
     disabled: false,
@@ -30,7 +30,7 @@ const features = [
   {
     title: "HIPAA-Compliant",
     description:
-      "Patients trust clinics to protect their data. ImageAssist’s HIPAA-compliant cloud storage keeps photos private, secure, and separate from personal galleries—ensuring professionalism and patient trust.",
+      "Patients trust clinics to protect their data. ImageAssist's HIPAA-compliant cloud storage keeps photos private, secure, and separate from personal galleries-ensuring professionalism and patient trust.",
     image: "/features/HIPAA.gif",
     disabled: false,
   },

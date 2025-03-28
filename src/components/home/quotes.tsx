@@ -3,6 +3,14 @@ import Wrapper from "../layouts/wrapper";
 
 const quotes = [
   {
+    name: "Dr. Foad Nahai",
+    company:
+      "Past President of the American Society for Aesthetic Plastic Surgery and the International Society of Aesthetic Plastic Surgery AP MetroDerm",
+    quote:
+      "ImageAssist brings professionalism and consistency to clinical photography in a way we’ve never had before. It’s fast, intuitive, and ensures every image we take meets the highest standard. It’s now a core part of how we document outcomes and communicate with patients.",
+    image: "/quotes/dr+nahai.png",
+  },
+  {
     name: "Michele Crain",
     company: "Face Forward Correctives",
     quote:
@@ -37,13 +45,6 @@ const quotes = [
       "ImageAssist makes sharing standardized patient photos easy and secure, improving team communication, decision-making, and workflow efficiency",
     image: "/quotes/Clare+Gargaro.png",
   },
-  {
-    name: "Nicolas Biro, MD",
-    company: "Pacific Eye Institute",
-    quote:
-      "ImageAssist makes patient photos fast, professional, and HIPAA-compliant. It’s an essential tool for any oculoplastic practice.",
-    image: "/quotes/Nicolas+Biro.png",
-  },
 ];
 
 function Quote({ quote }: { quote: (typeof quotes)[number] }) {
@@ -58,7 +59,7 @@ function Quote({ quote }: { quote: (typeof quotes)[number] }) {
       <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
         <div>
           <div className="font-display text-base text-slate-900">{quote.name}</div>
-          <div className="mt-1 text-sm text-slate-500">{quote.company}</div>
+          <div className="mt-1 text-sm text-slate-500 max-w-[260px]">{quote.company}</div>
         </div>
         <div className="overflow-hidden rounded-full bg-slate-50">
           <img

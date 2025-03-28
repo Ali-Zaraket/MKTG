@@ -41,8 +41,8 @@ function Feature({ feature, className, ...props }: { feature: any; className: st
           {feature.icon}
         </span>
       </div>
-      <h3 className={clsx("mt-6 text-sm font-medium text-accent/90")}>{feature.name}</h3>
-      <p className="mt-2 min-h-14 font-display text-xl text-slate-900">{feature.summary}</p>
+      <h3 className={clsx("mt-6 text-2xl font-medium text-accent/90")}>{feature.name}</h3>
+      <p className="mt-2 min-h-14 font-display text-slate-900">{feature.summary}</p>
       <p className="mt-4 text-sm text-slate-600 font-inter">{feature.description}</p>
     </div>
   );
@@ -133,7 +133,7 @@ export default function Research() {
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
         <div className="mx-auto md:text-center">
           <h2 className="font-medium text-2xl sm:text-5xl tracking-tight text-primary">
-            Enterprise-Grade Clinical Photography for Teams of Any Size
+            Enterprise-Grade Clinical Photography <br /> for Teams of Any Size
           </h2>
           <br />
           <p className="font-inter text-lg tracking-tight">

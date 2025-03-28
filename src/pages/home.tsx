@@ -6,6 +6,8 @@ import Pricing from "../components/home/pricing";
 import Research from "../components/home/research";
 import Quotes from "../components/home/quotes";
 import Contact from "../components/home/contact";
+import Videos from "../components/home/videos";
+import Press from "../components/home/press";
 
 export default function Home() {
   return (
@@ -13,10 +15,12 @@ export default function Home() {
       <Hero />
       <Solutions />
       <Research />
+      <Videos />
       <DownloadApp />
       <Quotes />
       <Pricing />
       <Team />
+      <Press />
       <Contact />
     </>
   );
