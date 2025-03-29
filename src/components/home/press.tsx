@@ -22,10 +22,10 @@ export default function Press() {
         <div className="flex flex-col sm:flex-row items-start gap-8 justify-between mb-6 mt-20">
           <Link
             to="https://journals.lww.com/annalsplasticsurgery/abstract/2024/04000/imageassist__a_novel_smartphone_application_for.6.aspx"
-            className="w-full"
+            className="w-full flex flex-col items-center"
             target="_blank"
           >
-            <img className="mb-6 scale-50" src="/press/ImageAssist Annals of Plastic Surgery.png" alt="" />
+            <img className="mb-6" src="/press/ImageAssist Annals of Plastic Surgery.png" width="250" alt="" />
             <legend className="font-light text-lg text-center mb-4">
               Read how ImageAssist is redefining clinical photography in peer-reviewed research.
             </legend>
@@ -34,16 +34,16 @@ export default function Press() {
           <Link
             to="https://issuu.com/plasticsurgerynews/docs/1-2-25_psn?fr=xKAE9_zU1NQ"
             target="_blank"
-            className="w-full"
+            className="w-full flex flex-col items-center"
           >
-            <img className="mb-6 scale-50" src="/press/ImageAssist ASPS Magazine.png" alt="" />
+            <img className="mb-6" src="/press/ImageAssist ASPS Magazine.png" alt="" width="250" />
             <legend className="font-light text-lg text-center mb-4">
               Discover why ImageAssist won the ASPS Innovation Challenge and is reshaping workflows.
             </legend>
           </Link>
 
-          <Link to="/" className="w-full">
-            <img className="mb-6 scale-50" src="/press/ImageAssist US Patent.png" alt="" />
+          <Link to="/" className="w-full flex flex-col items-center">
+            <img className="mb-6" src="/press/ImageAssist US Patent.png" alt="" width="250" />
             <legend className="font-light text-lg text-center mb-4">
               ImageAssist SmartFrames™ are patent-pending technology built for clinical precision.
             </legend>

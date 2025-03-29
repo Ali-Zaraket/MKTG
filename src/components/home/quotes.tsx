@@ -5,9 +5,9 @@ const quotes = [
   {
     name: "Dr. Foad Nahai",
     company:
-      "Unless your practice has a professional photographer this app is for you. All the guess work is taken out and the images are standardized and professional in quality. Its for my practice so all nurses and assistants can take publication quality photos!",
+      "Past President of the American Society for Aesthetic Plastic Surgery and the International Society of Aesthetic Plastic Surgery AP MetroDerm",
     quote:
-      "ImageAssist brings professionalism and consistency to clinical photography in a way we’ve never had before. It’s fast, intuitive, and ensures every image we take meets the highest standard. It’s now a core part of how we document outcomes and communicate with patients.",
+      "Unless your practice has a professional photographer this app is for you. All the guess work is taken out and the images are standardized and professional in quality. Its for my practice so all nurses and assistants can take publication quality photos!",
     image: "/quotes/dr+nahai.png",
   },
   {
