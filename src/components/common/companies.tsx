@@ -14,7 +14,7 @@ export const companiesData = [
   },
   {
     link: "#",
-    img: "/PCH.png",
+    img: "/Predators.png",
   },
   {
     link: "#",

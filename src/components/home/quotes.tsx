@@ -5,7 +5,7 @@ const quotes = [
   {
     name: "Dr. Foad Nahai",
     company:
-      "Past President of the American Society for Aesthetic Plastic Surgery and the International Society of Aesthetic Plastic Surgery AP MetroDerm",
+      "Unless your practice has a professional photographer this app is for you. All the guess work is taken out and the images are standardized and professional in quality. Its for my practice so all nurses and assistants can take publication quality photos!",
     quote:
       "ImageAssist brings professionalism and consistency to clinical photography in a way we’ve never had before. It’s fast, intuitive, and ensures every image we take meets the highest standard. It’s now a core part of how we document outcomes and communicate with patients.",
     image: "/quotes/dr+nahai.png",
@@ -25,19 +25,20 @@ const quotes = [
     image: "/quotes/Nicolas+Biro.png",
   },
   {
-    name: "Dr. Rahman Barry",
-    company: "Wake Plastic Surgery",
-    quote:
-      "ImageAssist is a game-changer for consistent, professional before-and-after photos. Easy to use, customizable, and essential for my practice.",
-    image: "/quotes/Dr+Rahman+Barry.png",
-  },
-  {
     name: "Danielle Hayes, MD",
     company: "Department of Plastic Surgery VUMC",
     quote:
       "ImageAssist makes it easy to capture board-standard photos with consistent angles and backgrounds. A game-changer for residents like me!",
     image: "/quotes/Danielle+Hayes.png",
   },
+  {
+    name: "Dr. Rahman Barry",
+    company: "Wake Plastic Surgery",
+    quote:
+      "ImageAssist is a game-changer for consistent, professional before-and-after photos. Easy to use, customizable, and essential for my practice.",
+    image: "/quotes/Dr+Rahman+Barry.png",
+  },
+
   {
     name: "Clare Gargaro PA-C",
     company: "Vanderbilt University Medical Center",
@@ -81,7 +82,7 @@ function Quote({ quote }: { quote: (typeof quotes)[number] }) {
 
 export default function Quotes() {
   return (
-    <section id="features" className="relative w-full overflow-hidden bg-white py-20">
+    <section id="features" className="relative w-full overflow-hidden bg-neutral py-20">
       <Wrapper>
         <SectionTitle reverse={false} title="Why Clinicans Love ImageAssist!" />
 

@@ -25,9 +25,9 @@ export default function Press() {
             className="w-full"
             target="_blank"
           >
-            <img className="mb-6" src="/press/ImageAssist Annals of Plastic Surgery.png" alt="" />
+            <img className="mb-6 scale-50" src="/press/ImageAssist Annals of Plastic Surgery.png" alt="" />
             <legend className="font-light text-lg text-center mb-4">
-              Read how ImageAssist is redefining clinical photography in peer-reviewed research. Read the article
+              Read how ImageAssist is redefining clinical photography in peer-reviewed research.
             </legend>
           </Link>
 
@@ -36,14 +36,14 @@ export default function Press() {
             target="_blank"
             className="w-full"
           >
-            <img className="mb-6" src="/press/ImageAssist ASPS Magazine.png" alt="" />
+            <img className="mb-6 scale-50" src="/press/ImageAssist ASPS Magazine.png" alt="" />
             <legend className="font-light text-lg text-center mb-4">
-              Discover why ImageAssist won the ASPS Innovation Challenge and is reshaping workflows. Read the feature
+              Discover why ImageAssist won the ASPS Innovation Challenge and is reshaping workflows.
             </legend>
           </Link>
 
           <Link to="/" className="w-full">
-            <img className="mb-6" src="/press/ImageAssist US Patent.png" alt="" />
+            <img className="mb-6 scale-50" src="/press/ImageAssist US Patent.png" alt="" />
             <legend className="font-light text-lg text-center mb-4">
               ImageAssist SmartFrames™ are patent-pending technology built for clinical precision.
             </legend>

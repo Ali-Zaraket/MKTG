@@ -142,10 +142,10 @@ function RightSection() {
       <Button
         variant="solid"
         color="primary"
-        href="https://apps.apple.com/us/app/image-assist-2-0/id6657948612"
+        href="https://imageassist-28638.web.app/#/login"
         className="!text-neutral"
       >
-        Download
+        Get Started
       </Button>
     </div>
   );

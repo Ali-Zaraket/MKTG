@@ -1,10 +1,5 @@
-/* eslint-disable react/prop-types */
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";
-
-const screenshotContacts = "";
-const screenshotInventory = "";
-const screenshotProfitLoss = "";
 
 const features = [
   {
@@ -12,7 +7,7 @@ const features = [
     summary: "Easily manage your entire clinic’s photo workflow, no matter the size.",
     description:
       "From solo providers to multi-location clinics, ImageAssist lets you add team members, manage permissions, and collaborate with ease—all from one secure account.",
-    image: screenshotProfitLoss,
+    image: "/enterprise/teams.png",
     icon: "workspaces",
   },
   {
@@ -20,7 +15,7 @@ const features = [
     summary: "Connect ImageAssist with your existing systems.",
     description:
       "Our platform integrates with major EMRs like 4D EMR, ARCC, and more. Easily export photos to your EMR or HIPAA-compliant cloud drive—no extra steps, no stress.",
-    image: screenshotInventory,
+    image: "/enterprise/EMR.png",
     icon: "hub",
   },
   {
@@ -28,7 +23,7 @@ const features = [
     summary: "Patient privacy is non-negotiable.",
     description:
       "With HIPAA-compliant cloud storage and encrypted data transfer, ImageAssist ensures your patient photos are safe, secure, and never stored on personal devices.",
-    image: screenshotContacts,
+    image: "/enterprise/HIPAA.png",
     icon: "verified_user",
   },
 ];
@@ -44,6 +39,10 @@ function Feature({ feature, className, ...props }: { feature: any; className: st
       <h3 className={clsx("mt-6 text-2xl font-medium text-accent/90")}>{feature.name}</h3>
       <p className="mt-2 min-h-14 font-display text-slate-900">{feature.summary}</p>
       <p className="mt-4 text-sm text-slate-600 font-inter">{feature.description}</p>
+
+      <div className="relative mt-4">
+        <img className="w-full" src={feature.image} alt="" sizes="52.75rem" loading="lazy" />
+      </div>
     </div>
   );
 }
@@ -57,13 +56,7 @@ function ResearchMobile() {
           {/* <div className="relative mt-10 pb-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
             <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-              <img
-                className="w-full"
-                src={feature.image}
-                alt=""
-                sizes="52.75rem"
-                loading="lazy"
-              />
+              <img className="w-full" src={feature.image} alt="" sizes="52.75rem" loading="lazy" />
             </div>
           </div> */}
         </div>

@@ -25,7 +25,7 @@ const navData = [
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary/5">
+    <footer className="bg-neutral">
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
         <div className="py-4 md:py-16">
           <div className="w-full flex items-center justify-center">

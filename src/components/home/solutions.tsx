@@ -16,7 +16,6 @@ const features = [
     description:
       "No need for special staff or space! ImageAssist utilizes the your iPad or iPhone camera to deliver high quality and perfectly clear images by automatically subtracting the subjects' background.",
     image: "/features/BgRemoval.gif",
-
     disabled: false,
   },
   {
@@ -24,14 +23,13 @@ const features = [
     description:
       "ImageAssist is available as a standalone iOS app or a fully integrated solution via our API. It currently integrates with Epic, 4D EMR, Apollo, and Nextech and can be customized to route photos to any EMR or platform.",
     image: "/features/PatientManagement.gif",
-
     disabled: false,
   },
   {
-    title: "HIPAA-Compliant",
+    title: "Web Application",
     description:
-      "Patients trust clinics to protect their data. ImageAssist's HIPAA-compliant cloud storage keeps photos private, secure, and separate from personal galleries-ensuring professionalism and patient trust.",
-    image: "/features/HIPAA.gif",
+      "Access your clinical photos anytime, anywhere. The new ImageAssist Web App lets you securely log in from any browser to view, organize, and share images—making patient photo management even easier for you and your team.",
+    image: "/features/Web App GIF.gif",
     disabled: false,
   },
 ];
@@ -55,7 +53,8 @@ export default function Solutions() {
   }, []);
 
   return (
-    <section id="features" className="relative w-full overflow-hidden bg-[url('/bg.png')] bg-cover bg-center py-20">
+    <section id="features" className="relative w-full overflow-hidden bg-primary py-20">
+      {/* <section id="features" className="relative w-full overflow-hidden bg-[url('/bg.png')] bg-cover bg-center py-20"> */}
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8 relative">
         <SectionTitle reverse={true} title="Capture. Manage. Secure." />
 

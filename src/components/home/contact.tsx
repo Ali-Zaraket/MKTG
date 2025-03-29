@@ -52,7 +52,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-[url('/bg.png')] bg-cover bg-center">
+    // <section id="contact" className="py-24 bg-[url('/bg.png')] bg-cover bg-center">
+    <section id="contact" className="py-24 bg-primary">
       <Wrapper>
         <SectionTitle title="Get in Touch" reverse={true} />
 

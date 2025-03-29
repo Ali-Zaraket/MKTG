@@ -79,11 +79,10 @@ function Card({ pricingCardData, index }: { pricingCardData: any; index: number 
         <>
           <div
             className={`order-first font-display text-4xl font-light tracking-tight ${
-              !isMiddle ? "text-neutral" : "text-accent"
+              !isMiddle ? "text-neutral" : "text-primary"
             } mt-4`}
           >
             {pricingCardData.tiers[tierIdx].price}
-
             <br />
             <span className="text-base">{pricingCardData.tiers[tierIdx].label}</span>
           </div>
@@ -102,7 +101,7 @@ function Card({ pricingCardData, index }: { pricingCardData: any; index: number 
                 step="1"
                 value={tierIdx}
                 onChange={handleSliderChange}
-                className="w-full cursor-pointer"
+                className="w-full cursor-pointer accent-secondary"
               />
 
               {/* Custom Track */}
@@ -184,8 +183,8 @@ export default function Pricing() {
     <section
       id="pricing"
       aria-label="Pricing"
-      className="py-20 sm:py-44 text-center relative isolate z-20 -scroll-mt-16 bg-[url('/bg.png')] bg-cover bg-center"
-      // className="py-20 sm:py-24 text-center relative isolate z-20 -scroll-mt-16"
+      // className="py-20 sm:py-44 text-center relative isolate z-20 -scroll-mt-16 bg-[url('/bg.png')] bg-cover bg-center"
+      className="py-20 sm:py-44 text-center relative isolate z-20 -scroll-mt-16 bg-primary"
     >
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
         <div className="md:text-center">

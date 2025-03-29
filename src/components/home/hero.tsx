@@ -1,4 +1,5 @@
 import Companies from "../common/companies";
+import SectionTitle from "../common/section-title";
 import Wrapper from "../layouts/wrapper";
 import Button from "../ui/button";
 
@@ -8,10 +9,10 @@ export default function Hero() {
       <div className="sm:py-10">
         <div className="flex md:flex-nowrap flex-wrap items-start py-5 gap-8 mt-6">
           <div className="mt-0 md:mt-24 max-w-[750px]">
-            <h1 className="text-slate-900 text-4xl font-semibold leading-tight font-inter capitalize">
+            <h1 className="font-display text-3xl tracking-tight sm:text-4xl md:text-5xl capitalize text-primary">
               The new standard in clinical <br /> photography
             </h1>
-            <h3 className="text-slate-500 text-2xl mt-8">
+            <h3 className="text-2xl mt-8">
               Capture, manage, and secure high-quality patient photos with simplicity, precision, and security—all in a
               seamless IOS experience.
             </h3>
