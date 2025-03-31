@@ -22,23 +22,25 @@ export default function Contact() {
       setLoading(true);
 
       var data = {
-        service_id: "service_ne7p051",
-        template_id: "template_zzkzp93",
-        user_id: "z9hhextWq318KSOes",
+        service_id: "service_9to8l76",
+        template_id: "template_dkbp4jb",
+        user_id: "uZ7hIi3Gr4A_sjoYI",
         template_params: {
-          from_name: `${formElement.firstName.value} ${formElement.lastName.value}`,
-          from_email: formElement.email.value,
-          message: `Message: ${formElement.message.value}`,
+          name: `${formElement.firstName.value} ${formElement.lastName.value}`,
+          email: formElement.email.value,
+          message: formElement.message.value,
+          time: new Date().toLocaleString(),
+          title: `Request from ${formElement.firstName.value} ${formElement.lastName.value}`,
         },
       };
 
-      //   await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-      //     method: "POST",
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //     },
-      //     body: JSON.stringify(data),
-      //   });
+      await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
       setLoading(false);
       setSuccess(true);
