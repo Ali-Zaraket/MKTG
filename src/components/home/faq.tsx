@@ -45,7 +45,7 @@ const faq = [
 
 export default function Faq() {
   return (
-    <section id="faq" className="relative w-full overflow-hidden bg-neutral py-20">
+    <section id="faqs" className="relative w-full overflow-hidden bg-neutral py-20">
       <Wrapper>
         <div className="mx-auto md:text-center">
           <SectionTitle title="Frequently Asked Questions" />
