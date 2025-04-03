@@ -12,9 +12,8 @@ export default function Press() {
             </h2>
             <br />
             <p className="font-inter text-lg tracking-tight">
-              Discover how ImageAssist transforms clinical photography with our brief introductory video both in EPIC
-              and the iOS app . See firsthand the simplicity, security, and sophistication of our technology that helps
-              healthcare professionals focus on what truly matters—patient care.
+              Featured in Annals of Plastic Surgery and spotlighted by the American Society of Plastic Surgeons, our
+              platform is trusted by leading institutions for its innovation, impact, and ease of use.
             </p>
           </div>
         </div>
