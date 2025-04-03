@@ -1,5 +1,4 @@
 import Companies from "../common/companies";
-import SectionTitle from "../common/section-title";
 import Wrapper from "../layouts/wrapper";
 import Button from "../ui/button";
 
@@ -14,7 +13,7 @@ export default function Hero() {
             </h1>
             <h3 className="text-2xl mt-8">
               Capture, manage, and secure high-quality patient photos with simplicity, precision, and security—all in a
-              seamless IOS experience.
+              seamless iOS experience.
             </h3>
 
             <div className="mt-8 flex flex-wrap items-center gap-6">

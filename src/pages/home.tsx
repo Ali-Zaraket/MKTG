@@ -8,6 +8,7 @@ import Quotes from "../components/home/quotes";
 import Contact from "../components/home/contact";
 import Videos from "../components/home/videos";
 import Press from "../components/home/press";
+import FAQ from "../components/home/faq";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <DownloadApp />
       <Quotes />
       <Pricing />
+      <FAQ />
       <Team />
       <Press />
       <Contact />

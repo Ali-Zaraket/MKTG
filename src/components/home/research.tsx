@@ -6,13 +6,13 @@ const features = [
     name: "Built for Teams",
     summary: "Easily manage your entire clinic’s photo workflow, no matter the size.",
     description:
-      "From solo providers to multi-location clinics, ImageAssist lets you add team members, manage permissions, and collaborate with ease—all from one secure account.",
+      "From solo providers, group practices or healthcare systems, ImageAssist lets you add team members, manage permissions, and collaborate with ease—all from one secure account.",
     image: "/enterprise/teams.png",
     icon: "workspaces",
   },
   {
     name: "Seamless EMR Integrations",
-    summary: "Connect ImageAssist with your existing systems.",
+    summary: "Connect ImageAssist with your existing medical record systems.",
     description:
       "Our platform integrates with major EMRs like 4D EMR, ARCC, and more. Easily export photos to your EMR or HIPAA-compliant cloud drive—no extra steps, no stress.",
     image: "/enterprise/EMR.png",
@@ -20,7 +20,7 @@ const features = [
   },
   {
     name: "HIPAA-Compliant & Secure",
-    summary: "Patient privacy is non-negotiable.",
+    summary: "ImageAssist keeps your photos secure, compliant, and worry-free.",
     description:
       "With HIPAA-compliant cloud storage and encrypted data transfer, ImageAssist ensures your patient photos are safe, secure, and never stored on personal devices.",
     image: "/enterprise/HIPAA.png",
@@ -30,7 +30,7 @@ const features = [
 
 function Feature({ feature, className, ...props }: { feature: any; className: string; props?: any }) {
   return (
-    <div className={clsx(className)} {...props}>
+    <div className={clsx(className, "flex flex-col")} {...props}>
       <div className={clsx("w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center")}>
         <span aria-hidden="true" className="text-primary font-bold material-symbols-outlined">
           {feature.icon}
@@ -40,7 +40,7 @@ function Feature({ feature, className, ...props }: { feature: any; className: st
       <p className="mt-2 min-h-14 font-display text-slate-900">{feature.summary}</p>
       <p className="mt-4 text-sm text-slate-600 font-inter">{feature.description}</p>
 
-      <div className="relative mt-4">
+      <div className="relative mt-auto">
         <img className="w-full" src={feature.image} alt="" sizes="52.75rem" loading="lazy" />
       </div>
     </div>

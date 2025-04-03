@@ -6,7 +6,7 @@ const navData = [
     title: "Trainee Discount",
   },
   {
-    link: "#support",
+    link: "https://form.typeform.com/to/Ql26NWwO",
     title: "Support",
   },
   {

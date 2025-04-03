@@ -33,7 +33,7 @@ const team = [
 
 export default function Team() {
   return (
-    <section id="team" className="py-16 bg-[#f5f1ed]">
+    <section id="team" className="py-16 bg-primary">
       <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
         <SectionTitle title="Meet Our Team" reverse={false} />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mt-12">
@@ -45,9 +45,9 @@ export default function Team() {
                 className="object-contain aspect-square rounded-lg"
                 loading="lazy"
               />
-              <h3 className="text-2xl font-semibold mt-4">{member.name}</h3>
-              <p className="text-gray-600 text-sm">{member.role}</p>
-              <p className="text-gray-600 mt-4">{member.description}</p>
+              <h3 className="text-neutral text-2xl font-semibold mt-4">{member.name}</h3>
+              <p className="text-neutral/90 text-sm">{member.role}</p>
+              <p className="text-neutral/70 mt-4">{member.description}</p>
             </div>
           ))}
         </div>

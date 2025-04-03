@@ -7,7 +7,7 @@ const features = [
   {
     title: "SmartFrames Technology",
     description:
-      "As easy as mobile check deposit, and built to meet plastic surgery society guidelines, 50+ full body SmartFrames ensure images are consistent and efficient. ImageAssist does the work so you don't have to.",
+      "As easy as mobile check deposit, and built using ASPS/PSF photographic guidelines, 50+ full body SmartFrames ensure images are consistent and efficient. ImageAssist does the work so you don’t have to.",
     image: "/features/SmartFrame.gif",
     disabled: false,
   },
@@ -21,7 +21,7 @@ const features = [
   {
     title: "Patient Management",
     description:
-      "ImageAssist is available as a standalone iOS app or a fully integrated solution via our API. It currently integrates with Epic, 4D EMR, Apollo, and Nextech and can be customized to route photos to any EMR or platform.",
+      "ImageAssist is available as a standalone iOS app or a fully integration solution via our API. It can integrate with Epic, 4D EMR, Apollo and Nextech and can be customized to route photos to any EMR or platform–all in a HIPAA compliant way.",
     image: "/features/PatientManagement.gif",
     disabled: false,
   },

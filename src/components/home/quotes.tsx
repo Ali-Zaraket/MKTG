@@ -4,7 +4,7 @@ import Wrapper from "../layouts/wrapper";
 const quotes = [
   {
     name: "Dr. Foad Nahai",
-    company: "Past President, MetroDerm",
+    company: "MetroDerm & Past President ISAPS",
     quote:
       "Unless your practice has a professional photographer this app is for you. All the guess work is taken out and the images are standardized and professional in quality. Its for my practice so all nurses and assistants can take publication quality photos!",
     image: "/quotes/dr+nahai.png",

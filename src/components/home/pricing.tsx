@@ -15,6 +15,7 @@ export const pricingData = {
         "Unlimited users",
         "iOS app—works on iPhone, iPad, and Web",
       ],
+      label: "Get Started",
       redirect: "https://imageassist-28638.web.app/#/register",
     },
     {
@@ -29,6 +30,7 @@ export const pricingData = {
         "Volume pricing available and flexible team scaling—add/remove users anytime",
       ],
       redirect: "https://imageassist-28638.web.app/#/register",
+      label: "Get Started",
       tiers: [
         { label: "2 users", price: "$80/practice" },
         { label: "3-5 users", price: "$150/practice" },
@@ -48,6 +50,7 @@ export const pricingData = {
         "Priority customer support",
       ],
       redirect: "https://form.typeform.com/to/a377DoS0",
+      label: "Contact Sales",
     },
   ],
 };
@@ -68,9 +71,6 @@ function Card({ pricingCardData, index }: { pricingCardData: any; index: number 
         isMiddle ? "bg-neutral" : "bg-transparent"
       }`}
     >
-      <span className="absolute top-2 left-2 bg-accent/10 text-accent px-2 w-fit mx-auto">
-        {pricingCardData?.label && pricingCardData.label}
-      </span>
       <p className={`order-first font-inter ${!isMiddle ? "text-neutral" : "text-slate-900"}`}>
         {pricingCardData.title}
       </p>
@@ -172,7 +172,7 @@ function Card({ pricingCardData, index }: { pricingCardData: any; index: number 
           window.open(pricingCardData.redirect, "_blank");
         }}
       >
-        Get started
+        {pricingCardData?.label ? pricingCardData.label : "Get Started"}
       </Button>
     </section>
   );
@@ -191,8 +191,8 @@ export default function Pricing() {
           <SectionTitle title="Simple, Scalable Pricing for Every Practice" reverse={true} />
 
           <p className="mt-8 text-lg text-neutral tracking-tight font-inter">
-            Whether you're a solo provider or a growing healthcare team, ImageAssist offers flexible plans designed to
-            fit your workflow and budget.
+            Whether you’re a solo provider, group practice or healthcare system, ImageAssist offers flexible plans
+            designed to fit your workflow and budget.
           </p>
         </div>
         <div className="-mx-4 mt-16 grid items-stretch max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-12 place-items-center">
