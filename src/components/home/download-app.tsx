@@ -12,14 +12,27 @@ export default function DownloadApp() {
             seconds to sign up!
           </p>
 
-          <a
-            href="https://apps.apple.com/us/app/image-assist-2-0/id6657948612"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block mx-auto w-fit mt-12"
-          >
-            <img src="/App+store-light.png" alt="" width="150" loading="lazy" />
-          </a>
+          <div className="flex gap-4 w-fit mt-12 mx-auto items-center flex-col sm:flex-row">
+            <div className="w-full flex justify-center sm:justify-end">
+              <a
+                href="https://apps.apple.com/us/app/image-assist-2-0/id6657948612"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-fit"
+              >
+                <img src="/App+store-light.png" alt="" width="150" loading="lazy" />
+              </a>
+            </div>
+
+            <a
+              href="https://apps.apple.com/us/app/image-assist-2-0/id6657948612"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full"
+            >
+              <img src="/ImageAssist QR Code.png" alt="" width="750" loading="lazy" />
+            </a>
+          </div>
         </div>
       </div>
     </section>

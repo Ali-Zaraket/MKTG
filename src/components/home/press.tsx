@@ -12,8 +12,8 @@ export default function Press() {
             </h2>
             <br />
             <p className="font-inter text-lg tracking-tight">
-              Featured in Annals of Plastic Surgery and spotlighted by the American Society of Plastic Surgeons, our
-              platform is trusted by leading institutions for its innovation, impact, and ease of use.
+              Featured in Annals of Plastic Surgery and spotlighted by the American Society of Plastic Surgeons, <br />{" "}
+              our platform is trusted by leading institutions for its innovation, impact, and ease of use.
             </p>
           </div>
         </div>
@@ -42,9 +42,9 @@ export default function Press() {
           </Link>
 
           <Link to="/" className="w-full flex flex-col items-center">
-            <img className="mb-6" src="/press/ImageAssist US Patent.png" alt="" width="250" />
+            <img className="mb-6" src="/press/ImageAssist Impact.png" alt="" width="250" />
             <legend className="font-light text-lg text-center mb-4">
-              ImageAssist SmartFrames™ are patent-pending technology built for clinical precision.
+              See how ImageAssist gives back—1% of proceeds support care in underserved communities worldwide.
             </legend>
           </Link>
         </div>
