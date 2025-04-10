@@ -134,17 +134,12 @@ function RightSection() {
   return (
     <div className="flex gap-x-4">
       <NavLink
-        link="https://imageassist-28638.web.app/#/login"
+        link="https://app.imageassist.com/#/login"
         target="_blank"
         title="Log in"
         className="items-center justify-center !hidden sm:!flex"
       />
-      <Button
-        variant="solid"
-        color="primary"
-        href="https://apps.apple.com/us/app/imageassist/id6657948612"
-        className="!text-neutral"
-      >
+      <Button variant="solid" color="primary" href="https://app.imageassist.com/#/login" className="!text-neutral">
         Get Started
       </Button>
     </div>
