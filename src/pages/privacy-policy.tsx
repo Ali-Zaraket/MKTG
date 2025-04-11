@@ -165,7 +165,21 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. International Data Transfers</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+            7. Biometric Authentication (Face ID / Touch ID)
+          </h2>
+          <p className="mb-4">
+            Our mobile application may offer optional biometric login using Face ID or Touch ID. This functionality is
+            provided through Apple's LocalAuthentication framework, which performs authentication entirely on your
+            device. We do not collect, store, transmit, or access any biometric data. The outcome of the authentication
+            (success/failure) is returned by the operating system, and no facial recognition or fingerprint data ever
+            leaves your device or is shared with our servers. This feature is offered solely to provide secure,
+            convenient access to the app.
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. International Data Transfers</h2>
           <p className="mb-4">
             Your information may be transferred to and processed in countries other than your own, including the United
             States. We ensure compliance with applicable data protection laws.
@@ -173,7 +187,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Data Retention</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Data Retention</h2>
           <p className="mb-4">
             We retain your information only as long as necessary to fulfill the purposes outlined in this policy or as
             required by law.
@@ -181,7 +195,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Data Security</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Data Security</h2>
           <p className="mb-4">
             We implement technical and organizational measures to protect your information. However, no system is 100%
             secure, and we cannot guarantee absolute security.
@@ -189,7 +203,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Information from Minors</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">11. Information from Minors</h2>
           <p className="mb-4">
             We do not knowingly collect data from or market to children under 18. If we learn that we’ve collected such
             information, we will delete it promptly.
@@ -197,7 +211,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">11. Your Privacy Rights</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">12. Your Privacy Rights</h2>
           <p className="mb-4">Depending on your location, you may have the right to:</p>
           <ul className="list-disc list-inside mb-4">
             <li>Access, update, or delete your information.</li>
@@ -214,12 +228,12 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">12. Do-Not-Track Features</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">13. Do-Not-Track Features</h2>
           <p className="mb-4">We do not currently respond to Do-Not-Track (DNT) signals.</p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">13. Privacy Rights for US Residents</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">14. Privacy Rights for US Residents</h2>
           <p className="mb-4">
             Residents of certain US states (e.g., Colorado, Tennessee) may have additional rights, such as:
           </p>
@@ -231,7 +245,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">14. Updates to This Policy</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">15. Updates to This Policy</h2>
           <p className="mb-4">
             We may update this policy to stay compliant with laws. The updated version will be indicated by a revised
             date at the top of this page.
@@ -239,7 +253,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">15. Contact Us</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">16. Contact Us</h2>
           <p className="mb-4">If you have questions or concerns, contact our Data Protection Officer (DPO):</p>
           <ul className="list-disc list-inside mb-4">
             <li>
@@ -256,7 +270,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">16. Review, Update, or Delete Your Data</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-4">17. Review, Update, or Delete Your Data</h2>
           <p className="mb-4">
             You may request to review, update, or delete your personal information by contacting us using the details
             above.

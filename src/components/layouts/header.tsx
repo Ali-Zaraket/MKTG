@@ -2,6 +2,7 @@ import Wrapper from "./wrapper";
 
 import NavLink from "../ui/nav-link";
 import Button from "../ui/button";
+import { Link } from "react-router-dom";
 
 // function MobileNavIcon({ open }: { open: boolean }) {
 //   return (
@@ -139,9 +140,13 @@ function RightSection() {
         title="Log in"
         className="items-center justify-center !hidden sm:!flex"
       />
-      <Button variant="solid" color="primary" href="https://app.imageassist.com/#/login" className="!text-neutral">
+      <Link
+        target="_blank"
+        to="https://app.imageassist.com/#/login"
+        className="group cursor-pointer inline-flex items-center justify-center rounded-full py-2 px-6 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-primary text-white hover:bg-primary/90 hover:text-white active:bg-primary/90 active:text-white focus-visible:outline-primary disabled:pointer-events-none !text-neutral"
+      >
         Get Started
-      </Button>
+      </Link>
     </div>
   );
 }
