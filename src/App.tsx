@@ -7,6 +7,7 @@ import TraineeDiscount from "./pages/trainee-discount";
 import UserGuide from "./pages/user-guide";
 import TermsOfService from "./pages/terms-of-service";
 import PrivacyPolicy from "./pages/privacy-policy";
+import Support from "./pages/support";
 
 export default function App() {
   return (
@@ -20,6 +21,8 @@ export default function App() {
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Route>
+
+          <Route path="/support" element={<Support />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

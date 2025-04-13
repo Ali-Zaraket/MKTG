@@ -27,17 +27,17 @@ export default function TermsOfService() {
       </div>
 
       <div className="text-lg mb-12">
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">AGREEMENT TO OUR LEGAL TERMS</h3>
-        </p>
+        </div>
         <p>
           We are&nbsp;Image Assist&nbsp;("Company," "we," "us," "our"), a company registered
           in&nbsp;Tennessee,&nbsp;United States&nbsp;at&nbsp;1211 Medical Center Dr,&nbsp;Nashville,&nbsp;TN&nbsp;37232.
         </p>
         <p>
           We operate&nbsp;the website&nbsp;
-          <a href="https://www.imageassist.com" target="">
-            https://www.imageassist.com
+          <a href="https://www.imageassist.com" target="" className="inline">
+            imageassist.com
           </a>
           &nbsp;(the&nbsp;"Site"),&nbsp;the mobile application&nbsp;Image Assist&nbsp;(the&nbsp;"App"), as well as any
           other related products and services that refer or link to these legal terms (the&nbsp;"Legal Terms")
@@ -70,9 +70,9 @@ export default function TermsOfService() {
         </p>
         <p>We recommend that you print a copy of these Legal Terms for your records.</p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">1. OUR SERVICES</h3>
-        </p>
+        </div>
         <p>
           The information provided when using the Services is not intended for distribution to or use by any person or
           entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or
@@ -84,18 +84,15 @@ export default function TermsOfService() {
           The Services are tailored to comply with industry-specific regulations (Health Insurance Portability and
           Accountability Act (HIPAA), Federal Information Security Management Act (FISMA), etc.) as outlined in the
           Google Firestore &nbsp;under our Business Associate Agreement( BAA) (
-          <a href="https://cloud.google.com/security/compliance/hipaa-compliance/">
-            https://cloud.google.com/security/compliance/hipaa-compliance/
-          </a>
-          )
+          <a href="https://cloud.google.com/security/compliance/hipaa-compliance/">HIPAA compliance</a>)
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">2. INTELLECTUAL PROPERTY RIGHTS</h3>
-        </p>
-        <p>
+        </div>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">Our intellectual property</h3>
-        </p>
+        </div>
         <p>
           We are the owner or the licensee of all intellectual property rights in our Services, including all source
           code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics in
@@ -111,9 +108,9 @@ export default function TermsOfService() {
           non-commercial use or internal business purpose&nbsp;only.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">Your use of our Services</h3>
-        </p>
+        </div>
         <p>
           <strong>Subject to your compliance with these Legal Terms, including the &nbsp;"</strong>
           <a
@@ -155,9 +152,9 @@ export default function TermsOfService() {
           right to use our Services will terminate immediately.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">Your submissions&nbsp;and contributions</h3>
-        </p>
+        </div>
         <p>
           Please review this section and the&nbsp;"
           <a href="https://app.termly.io/builder/websites/7b460317-5d0c-4284-bb52-1159be89cd3b/documents/4324572/General/Platform%20Type#prohibited">
@@ -172,14 +169,14 @@ export default function TermsOfService() {
           such Submission. You agree that we shall own this Submission and be entitled to its unrestricted use and
           dissemination for any lawful purpose, commercial or otherwise, without acknowledgment or compensation to you.
         </p>
-        <p>
+        <div>
           Contributions:<h3 className="mt-6 mb-2 font-bold">&nbsp;</h3>The Services may invite you to chat, contribute
           to, or participate in blogs, message boards, online forums, and other functionality during which you may
           create, submit, post, display, transmit, publish, distribute, or broadcast content and materials to us or
           through the Services, including but not limited to text, writings, video, audio, photographs, music, graphics,
           comments, reviews, rating suggestions, personal information, or other material ("Contributions"). Any
           Submission that is publicly posted shall also be treated as a Contribution.
-        </p>
+        </div>
         <p>You understand that Contributions may be viewable by other users of the Services.</p>
         <p>
           When you post Contributions, you grant us a&nbsp;license&nbsp;(including use of your name, trademarks, and
@@ -196,12 +193,12 @@ export default function TermsOfService() {
           This&nbsp;license&nbsp;includes our use of your name, company name, and franchise name, as applicable, and any
           of the trademarks, service marks, trade names, logos, and personal and commercial images you provide.
         </p>
-        <p>
+        <div>
           You are responsible for what you post or upload:<h3 className="mt-6 mb-2 font-bold">&nbsp;</h3>By sending us
           Submissions&nbsp;and/or posting Contributions&nbsp;through any part of the Services&nbsp;or making
           Contributions accessible through the Services by linking your account through the Services to any of your
           social networking accounts,&nbsp;you:
-        </p>
+        </div>
         <ul className="list-disc pl-12 mt-4 mb-12">
           <li>
             <p>
@@ -248,9 +245,9 @@ export default function TermsOfService() {
           Contributions, we may also suspend or disable your account and report you to the authorities.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">3.&nbsp;USER REPRESENTATIONS</h3>
-        </p>
+        </div>
         <p>
           By using the Services, you represent and warrant that:&nbsp;(1) all registration information you submit will
           be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly
@@ -267,9 +264,9 @@ export default function TermsOfService() {
         </p>
         <p></p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">4.&nbsp;USER REGISTRATION</h3>
-        </p>
+        </div>
         <p>
           You may be required to register to use the Services. You agree to keep your password confidential and will be
           responsible for all use of your account and password. We reserve the right to remove, reclaim, or change a
@@ -278,12 +275,12 @@ export default function TermsOfService() {
         </p>
         <p></p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">5.&nbsp;PURCHASES AND PAYMENT</h3>
-        </p>
-        <p>
+        </div>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">All purchases are non-refundable.</h3>
-        </p>
+        </div>
         <p>
           You agree to provide current, complete, and accurate purchase and account information for all purchases made
           via the Services. You further agree to promptly update account and payment information, including email
@@ -306,9 +303,9 @@ export default function TermsOfService() {
         </p>
         <p></p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">6.&nbsp;PROHIBITED ACTIVITIES</h3>
-        </p>
+        </div>
         <p>
           You may not access or use the Services for any purpose other than that for which we make the Services
           available. The Services may not be used in connection with any commercial&nbsp;endeavors&nbsp;except those
@@ -435,9 +432,9 @@ export default function TermsOfService() {
           </li>
         </ul>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">7.&nbsp;USER GENERATED CONTRIBUTIONS</h3>
-        </p>
+        </div>
         <p>
           The Services may invite you to chat, contribute to, or participate in blogs, message boards, online forums,
           and other functionality, and may provide you with the opportunity to create, submit, post, display, transmit,
@@ -526,9 +523,9 @@ export default function TermsOfService() {
           other things, termination or suspension of your rights to use the Services.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">8.&nbsp;CONTRIBUTION&nbsp;LICENSE</h3>
-        </p>
+        </div>
         <p>
           By posting your Contributions to any part of the Services&nbsp;or making Contributions accessible to the
           Services by linking your account from the Services to any of your social networking accounts, you
@@ -563,12 +560,12 @@ export default function TermsOfService() {
           notice. We have no obligation to monitor your Contributions.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">9.&nbsp;MOBILE APPLICATION&nbsp;LICENSE</h3>
-        </p>
-        <p>
+        </div>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">Use&nbsp;License</h3>
-        </p>
+        </div>
         <p>
           If you access the Services via the App, then we grant you a revocable, non-exclusive, non-transferable,
           limited right to install and use the App on wireless electronic devices owned or controlled by you, and to
@@ -588,9 +585,9 @@ export default function TermsOfService() {
           accessories, or devices for use with the App.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">Apple and Android Devices</h3>
-        </p>
+        </div>
         <p>
           The following terms apply when you use the App obtained from either the Apple Store or Google Play (each
           an&nbsp;"App Distributor") to access the Services: (1) the&nbsp;license&nbsp;granted to you for our App is
@@ -616,9 +613,9 @@ export default function TermsOfService() {
           third-party beneficiary thereof.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">10.&nbsp;SOCIAL MEDIA</h3>
-        </p>
+        </div>
         <p>
           As part of the functionality of the Services, you may link your account with online accounts you have with
           third-party service providers (each such account, a&nbsp;"Third-Party Account") by either: (1) providing your
@@ -655,9 +652,9 @@ export default function TermsOfService() {
           associated with your account.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">11.&nbsp;SERVICES MANAGEMENT</h3>
-        </p>
+        </div>
         <p>
           We reserve the right, but not the obligation, to: (1) monitor the Services for violations of these Legal
           Terms; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these
@@ -670,9 +667,9 @@ export default function TermsOfService() {
           the Services.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">12.&nbsp;PRIVACY POLICY</h3>
-        </p>
+        </div>
         <p>
           We care about data privacy and security. By using the Services, you agree to be bound by our Privacy Policy
           posted on the Services, which is incorporated into these Legal Terms. Please be advised the Services are
@@ -683,9 +680,9 @@ export default function TermsOfService() {
           in&nbsp;the&nbsp;United States.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">13.&nbsp;TERM AND TERMINATION</h3>
-        </p>
+        </div>
         <p>
           These Legal Terms shall remain in full force and effect while you use the Services. WITHOUT LIMITING ANY OTHER
           PROVISION OF THESE LEGAL TERMS, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR
@@ -703,9 +700,9 @@ export default function TermsOfService() {
           appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">14.&nbsp;MODIFICATIONS AND INTERRUPTIONS</h3>
-        </p>
+        </div>
         <p>
           We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason
           at our sole discretion without notice. However, we have no obligation to update any information on our
@@ -723,21 +720,21 @@ export default function TermsOfService() {
           support the Services or to supply any corrections, updates, or releases in connection therewith.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">15.&nbsp;GOVERNING LAW</h3>
-        </p>
+        </div>
         <p>
           These Legal Terms and your use of the Services are governed by and construed in accordance with the laws
           of&nbsp;the State of&nbsp;Tennessee&nbsp;applicable to agreements made and to be entirely performed
           within&nbsp;the State of&nbsp;Tennessee,&nbsp;without regard to its conflict of law principles.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">16.&nbsp;DISPUTE RESOLUTION</h3>
-        </p>
-        <p>
+        </div>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">Binding Arbitration</h3>
-        </p>
+        </div>
         <p>
           If the Parties are unable to resolve a Dispute through informal negotiations, the Dispute (except those
           Disputes expressly excluded below) will be finally and exclusively resolved by binding arbitration. YOU
@@ -775,9 +772,9 @@ export default function TermsOfService() {
           jurisdiction of that court.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">Restrictions</h3>
-        </p>
+        </div>
         <p>
           The Parties agree that any arbitration shall be limited to the Dispute between the Parties individually. To
           the full extent permitted by law, (a) no arbitration shall be joined with any other proceeding; (b) there is
@@ -786,9 +783,9 @@ export default function TermsOfService() {
           representative capacity on behalf of the general public or any other persons.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">Exceptions to Arbitration</h3>
-        </p>
+        </div>
         <p>
           The Parties agree that the following Disputes are not subject to the above provisions concerning binding
           arbitration: (a) any Disputes seeking to enforce or protect, or concerning the validity of, any of the
@@ -800,9 +797,9 @@ export default function TermsOfService() {
           agree to submit to the personal jurisdiction of that court.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">17.&nbsp;CORRECTIONS</h3>
-        </p>
+        </div>
         <p>
           There may be information on the Services that contains typographical errors, inaccuracies, or omissions,
           including descriptions, pricing, availability, and various other information. We reserve the right to correct
@@ -810,9 +807,9 @@ export default function TermsOfService() {
           without prior notice.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">18.&nbsp;DISCLAIMER</h3>
-        </p>
+        </div>
         <p>
           THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE
           AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN
@@ -835,9 +832,9 @@ export default function TermsOfService() {
           USE YOUR BEST&nbsp;JUDGMENT&nbsp;AND EXERCISE CAUTION WHERE APPROPRIATE.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">19.&nbsp;LIMITATIONS OF LIABILITY</h3>
-        </p>
+        </div>
         <p>
           IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT,
           INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST
@@ -850,9 +847,9 @@ export default function TermsOfService() {
           ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">20.&nbsp;INDEMNIFICATION</h3>
-        </p>
+        </div>
         <p>
           You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our
           respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or
@@ -871,9 +868,9 @@ export default function TermsOfService() {
           further indemnification is provided by The Hartford insurance company, policy number #65SBMBJ7XW0.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">21.&nbsp;USER DATA</h3>
-        </p>
+        </div>
         <p>
           We will maintain certain data that you transmit to the Services for the purpose of managing the performance of
           the Services, as well as data relating to your use of the Services. Although we perform regular routine
@@ -886,14 +883,12 @@ export default function TermsOfService() {
           All user information and anything that would be considered protected health information &nbsp;(PHI) in case
           ImageAssist is being used for healthcare applications, is backed and protected within GoogleCloud Firestore
           platform for which we have a Business Associate Agreement which delineates &nbsp;HIPAA compliance.
-          <a href="https://cloud.google.com/security/compliance/hipaa-compliance/">
-            https://cloud.google.com/security/compliance/hipaa-compliance/
-          </a>
+          <a href="https://cloud.google.com/security/compliance/hipaa-compliance/">HIPAA compliance</a>
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">22.&nbsp;ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</h3>
-        </p>
+        </div>
         <p>
           Visiting the Services, sending us emails, and completing online forms constitute electronic communications.
           You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and
@@ -906,18 +901,18 @@ export default function TermsOfService() {
           credits by any means other than electronic means.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">23.&nbsp;CALIFORNIA USERS AND RESIDENTS</h3>
-        </p>
+        </div>
         <p>
           If any complaint with us is not satisfactorily resolved, you can contact the Complaint Assistance Unit of the
           Division of Consumer Services of the California Department of Consumer Affairs in writing at 1625 North Market
           Blvd., Suite N 112, Sacramento, California 95834 or by telephone at (800) 952-5210 or (916) 445-1254.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">24.&nbsp;MISCELLANEOUS</h3>
-        </p>
+        </div>
         <p>
           These Legal Terms and any policies or operating rules posted by us on the Services or in respect to the
           Services constitute the entire agreement and understanding between you and us. Our failure to exercise or
@@ -934,9 +929,9 @@ export default function TermsOfService() {
           by the parties hereto to execute these Legal Terms.
         </p>
         <p></p>
-        <p>
+        <div>
           <h3 className="mt-6 mb-2 font-bold">25.&nbsp;CONTACT US</h3>
-        </p>
+        </div>
         <p>
           In order to resolve a complaint regarding the Services or to receive further information regarding use of the
           Services, please contact us at:

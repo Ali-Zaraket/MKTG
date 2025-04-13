@@ -14,8 +14,15 @@ export default function UserGuide() {
       </p>
 
       <div className="mt-20">
-        <div className="flex items-center gap-x-20 mb-20">
-          <img src="/guide1.png" alt="Portrait Pose" width="354" height="425" loading="lazy" />
+        <div className="flex items-center md:flex-row flex-col gap-20 mb-20">
+          <img
+            className="md:w-auto w-full"
+            src="/guide1.png"
+            alt="Portrait Pose"
+            width="354"
+            height="425"
+            loading="lazy"
+          />
 
           <div>
             <h2 className="text-4xl font-semibold text-primary">Portrait Pose</h2>
@@ -29,7 +36,7 @@ export default function UserGuide() {
           </div>
         </div>
 
-        <div className="flex items-center gap-x-20 mb-20">
+        <div className="flex items-center md:flex-row flex-col-reverse gap-20 mb-20">
           <div>
             <h2 className="text-4xl font-semibold text-primary">Profile (90° Angle) Pose</h2>
             <p className="font-light text-lg mt-4">
@@ -39,11 +46,25 @@ export default function UserGuide() {
               (G). The edge of the forehead should fall somewhere behind the forehead marker (H)
             </p>
           </div>
-          <img src="/guide2.png" alt="Profile (90° Angle) Pose" width="354" height="425" loading="lazy" />
+          <img
+            className="md:w-auto w-full"
+            src="/guide2.png"
+            alt="Profile (90° Angle) Pose"
+            width="354"
+            height="425"
+            loading="lazy"
+          />
         </div>
 
-        <div className="flex items-center gap-x-20 mb-20">
-          <img src="/guide3.png" alt="Portrait Pose" width="354" height="425" loading="lazy" />
+        <div className="flex items-center md:flex-row flex-col gap-20 mb-20">
+          <img
+            className="md:w-auto w-full"
+            src="/guide3.png"
+            alt="Portrait Pose"
+            width="354"
+            height="425"
+            loading="lazy"
+          />
 
           <div>
             <h2 className="text-4xl font-semibold text-primary">45° Angle Pose</h2>
@@ -57,7 +78,7 @@ export default function UserGuide() {
           </div>
         </div>
 
-        <div className="flex items-center gap-x-20 mb-20">
+        <div className="flex items-center md:flex-row flex-col gap-20 mb-20">
           <div>
             <h2 className="text-4xl font-semibold text-primary">Worm’s Eye Pose</h2>
             <p className="font-light text-lg mt-4">
@@ -68,7 +89,14 @@ export default function UserGuide() {
             </p>
           </div>
 
-          <img src="/guide4.png" alt="Worm’s Eye Pose" width="354" height="425" loading="lazy" />
+          <img
+            className="md:w-auto w-full"
+            src="/guide4.png"
+            alt="Worm’s Eye Pose"
+            width="354"
+            height="425"
+            loading="lazy"
+          />
         </div>
       </div>
     </Wrapper2>
