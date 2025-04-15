@@ -16,7 +16,7 @@ export const pricingData = {
         "iOS app—works on iPhone, iPad, and Web",
       ],
       label: "Get Started",
-      redirect: "https://apps.apple.com/us/app/imageassist/id6657948612",
+      redirect: "https://app.imageassist.com/#/login",
     },
     {
       title: "Teams",
@@ -29,7 +29,7 @@ export const pricingData = {
         "Easy EMR integrations, including 4D EMR & ARCC",
         "Volume pricing available and flexible team scaling—add/remove users anytime",
       ],
-      redirect: "https://apps.apple.com/us/app/imageassist/id6657948612",
+      redirect: "https://app.imageassist.com/#/login",
       label: "Get Started",
       tiers: [
         { label: "2 users", price: "$80/practice" },
