@@ -12,8 +12,9 @@ export default function Hero() {
               The new standard in clinical <br /> photography
             </h1>
             <h3 className="text-2xl mt-8">
-              Capture, manage, and secure high-quality patient photos with simplicity, precision, and security—all in a
-              seamless iOS experience.
+              Capture, manage, and secure high-quality patient photos with ease. Whether you're building
+              before-and-after galleries, presenting podium talks, publishing research, or simply ensuring consistent
+              documentation—ImageAssist is your go-to app.
             </h3>
 
             <div className="mt-8 flex flex-wrap items-center gap-6">

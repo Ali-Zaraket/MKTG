@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SectionTitle from "../common/section-title";
 import Button from "../ui/button";
+import { Link } from "react-router-dom";
 
 export const pricingData = {
   data: [
@@ -12,7 +13,7 @@ export const pricingData = {
         "Automatic background removal",
         "Search & manage patient photos by name, date, or procedure",
         "HIPAA-compliant cloud storage",
-        "Unlimited users",
+        "Unlimited photos",
         "iOS app—works on iPhone, iPad, and Web",
       ],
       label: "Get Started",
@@ -199,6 +200,16 @@ export default function Pricing() {
           {pricingData.data.map((data, idx) => (
             <Card pricingCardData={data} key={`pricing-card-${idx}`} index={idx} />
           ))}
+        </div>
+
+        <div className="mt-16">
+          <p className="text-neutral/80 font-inter">
+            Residents & Trainees: Get 75% off for 6 months to support your start —{" "}
+            <Link to="https://form.typeform.com/to/a377DoS0" target="_blank" className="!underline !text-neutral/80">
+              contact sales
+            </Link>{" "}
+            to claim your discount.
+          </p>
         </div>
       </div>
     </section>
