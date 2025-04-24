@@ -205,7 +205,7 @@ export default function Pricing() {
         <div className="mt-16">
           <p className="text-neutral/80 font-inter">
             Residents & Trainees: Get 75% off for 6 months to support your start —{" "}
-            <Link to="https://form.typeform.com/to/a377DoS0" target="_blank" className="!underline !text-neutral/80">
+            <Link to="https://form.typeform.com/to/vBcdYSnA" target="_blank" className="!underline !text-neutral/80">
               contact sales
             </Link>{" "}
             to claim your discount.
