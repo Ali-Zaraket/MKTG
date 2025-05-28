@@ -1,6 +1,7 @@
 import Companies from "../common/companies";
 import Wrapper from "../layouts/wrapper";
 import Button from "../ui/button";
+import ReactGA from "react-ga4";
 
 export default function Hero() {
   return (
@@ -22,6 +23,12 @@ export default function Hero() {
                 href="https://apps.apple.com/us/app/image-assist-2-0/id6657948612"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  ReactGA.event({
+                    category: "Download App",
+                    action: "click",
+                  });
+                }}
               >
                 <img src="/App+store.png" alt="" width="150" />
               </a>

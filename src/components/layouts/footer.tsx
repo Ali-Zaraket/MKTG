@@ -1,4 +1,5 @@
 import NavLink from "../ui/nav-link";
+import ReactGA from "react-ga4";
 
 const navData = [
   {
@@ -49,6 +50,13 @@ export default function Footer() {
               href="https://www.linkedin.com/company/imageassistinc"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                ReactGA.event({
+                  category: "Social Links",
+                  action: "click",
+                  label: "Linkedin",
+                });
+              }}
             >
               <svg className="h-6 w-6 fill-primary/75 group-hover:fill-primary" viewBox="0 0 310 310">
                 <g id="XMLID_801_">
@@ -74,6 +82,13 @@ export default function Footer() {
               href="https://x.com/imageassist"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                ReactGA.event({
+                  category: "Social Links",
+                  action: "click",
+                  label: "X/Twitter",
+                });
+              }}
             >
               <svg className="h-6 w-6 fill-primary/75 group-hover:fill-primary" aria-hidden="true" viewBox="0 0 24 24">
                 <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z"></path>
@@ -86,6 +101,13 @@ export default function Footer() {
               href="https://www.youtube.com/@ImageAssist"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                ReactGA.event({
+                  category: "Social Links",
+                  action: "click",
+                  label: "Youtube",
+                });
+              }}
             >
               <svg className="h-6 w-6 fill-primary/75 group-hover:fill-primary" viewBox="0 -3 20 20" aria-hidden="true">
                 <g id="Page-1" strokeWidth="1">

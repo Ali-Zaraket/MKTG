@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import ReactGA from "react-ga4";
 
 export default function NotFound() {
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+
   return (
     <div className="w-full h-screen flex items-center justify-center flex-col bg-accent/10">
       <h1 className="text-4xl font-medium text-center mb-4">

@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import NotFound from "./pages/not-found";
@@ -8,8 +8,15 @@ import UserGuide from "./pages/user-guide";
 import TermsOfService from "./pages/terms-of-service";
 import PrivacyPolicy from "./pages/privacy-policy";
 import Support from "./pages/support";
+import ReactGA from "react-ga4";
 
 export default function App() {
+  useEffect(() => {
+    ReactGA.initialize("G-85BPD02XD0", {
+      testMode: false,
+    });
+  }, []);
+
   return (
     <BrowserRouter>
       <Suspense fallback={<RootLayout />}>

@@ -1,4 +1,5 @@
 import SectionTitle from "../common/section-title";
+import ReactGA from "react-ga4";
 
 export default function DownloadApp() {
   return (
@@ -19,6 +20,12 @@ export default function DownloadApp() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-fit"
+                onClick={() => {
+                  ReactGA.event({
+                    category: "Download App",
+                    action: "click",
+                  });
+                }}
               >
                 <img src="/App+store-light.png" alt="" width="150" loading="lazy" />
               </a>

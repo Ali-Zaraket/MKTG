@@ -2,6 +2,7 @@ import { useState } from "react";
 import SectionTitle from "../common/section-title";
 import Button from "../ui/button";
 import { Link } from "react-router-dom";
+import ReactGA from "react-ga4";
 
 export const pricingData = {
   data: [
@@ -170,6 +171,19 @@ function Card({ pricingCardData, index }: { pricingCardData: any; index: number 
         aria-label="Get started"
         className={`py-4 ${!isMiddle ? "bg-neutral !text-accent !ring-0 hover:bg-neutral/90 font-semibold" : ""}`}
         onClick={() => {
+          if (pricingCardData.tiers) {
+            ReactGA.event({
+              category: `Pricing - ${pricingCardData.title}`,
+              action: "click",
+              label: pricingCardData.tiers[tierIdx].price,
+            });
+          } else {
+            ReactGA.event({
+              category: `Pricing - ${pricingCardData.title}`,
+              action: "click",
+              label: pricingCardData.price,
+            });
+          }
           window.open(pricingCardData.redirect, "_blank");
         }}
       >

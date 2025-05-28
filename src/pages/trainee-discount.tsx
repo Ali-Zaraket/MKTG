@@ -1,6 +1,9 @@
 import Wrapper2 from "../components/layouts/wrapper2";
+import ReactGA from "react-ga4";
 
 export default function TraineeDiscount() {
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+
   return (
     <Wrapper2>
       <div className="my-20 text-center">
