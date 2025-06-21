@@ -3,19 +3,18 @@ export const companiesData = [
     link: "#",
     img: "/EPIC.png",
   },
-  {
-    link: "#",
-    img: "/Vanerbilt Health.png",
-  },
-
+  // {
+  //   link: "#",
+  //   img: "/Vanerbilt Health.png",
+  // },
   {
     link: "#",
     img: "/4D EMR.png",
   },
-  {
-    link: "#",
-    img: "/Predators.png",
-  },
+  // {
+  //   link: "#",
+  //   img: "/Predators.png",
+  // },
   {
     link: "#",
     img: "/Nextech.png",

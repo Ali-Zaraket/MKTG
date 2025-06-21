@@ -23,13 +23,13 @@ const quotes = [
       "ImageAssist makes patient photos fast, professional, and HIPAA-compliant. It’s an essential tool for any oculoplastic practice.",
     image: "/quotes/Nicolas+Biro.png",
   },
-  {
-    name: "Danielle Hayes, MD",
-    company: "Department of Plastic Surgery VUMC",
-    quote:
-      "ImageAssist makes it easy to capture board-standard photos with consistent angles and backgrounds. A game-changer for residents like me!",
-    image: "/quotes/Danielle+Hayes.png",
-  },
+  // {
+  //   name: "Danielle Hayes, MD",
+  //   company: "Department of Plastic Surgery VUMC",
+  //   quote:
+  //     "ImageAssist makes it easy to capture board-standard photos with consistent angles and backgrounds. A game-changer for residents like me!",
+  //   image: "/quotes/Danielle+Hayes.png",
+  // },
   {
     name: "Dr. Rahman Barry",
     company: "Wake Plastic Surgery",
@@ -37,14 +37,21 @@ const quotes = [
       "ImageAssist is a game-changer for consistent, professional before-and-after photos. Easy to use, customizable, and essential for my practice.",
     image: "/quotes/Dr+Rahman+Barry.png",
   },
-
   {
-    name: "Clare Gargaro PA-C",
-    company: "Vanderbilt University Medical Center",
+    name: "Dr. Basil Schaheen",
+    company: "Northeast Georgia Plastic Surgery",
     quote:
-      "ImageAssist makes sharing standardized patient photos easy and secure, improving team communication, decision-making, and workflow efficiency",
-    image: "/quotes/Clare+Gargaro.png",
+      "Our clinic nurses love ImageAssist. One of them said today how easy it is to capture consistent, uniform patient photos—it's made a big difference in our workflow.",
+    image: "/quotes/Basil.png",
   },
+
+  // {
+  //   name: "Clare Gargaro PA-C",
+  //   company: "Vanderbilt University Medical Center",
+  //   quote:
+  //     "ImageAssist makes sharing standardized patient photos easy and secure, improving team communication, decision-making, and workflow efficiency",
+  //   image: "/quotes/Clare+Gargaro.png",
+  // },
 ];
 
 function Quote({ quote }: { quote: (typeof quotes)[number] }) {
@@ -96,7 +103,7 @@ export default function Quotes() {
           </div>
           <div className="flex flex-col gap-8">
             <Quote quote={quotes[4]} />
-            <Quote quote={quotes[5]} />
+            {/* <Quote quote={quotes[5]} /> */}
           </div>
         </div>
       </Wrapper>
