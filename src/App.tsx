@@ -9,6 +9,11 @@ import TermsOfService from "./pages/terms-of-service";
 import PrivacyPolicy from "./pages/privacy-policy";
 import Support from "./pages/support";
 import ReactGA from "react-ga4";
+import Blogs from "./pages/blogs";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Blog from "./pages/blog";
+
+const queryClient = new QueryClient();
 
 export default function App() {
   useEffect(() => {
@@ -18,22 +23,26 @@ export default function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Suspense fallback={<RootLayout />}>
-        <Routes>
-          <Route path="/" element={<RootLayout />}>
-            <Route index element={<Home />} />
-            <Route path="/traineediscount" element={<TraineeDiscount />} />
-            <Route path="/userguide" element={<UserGuide />} />
-            <Route path="/terms-of-service" element={<TermsOfService />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          </Route>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Suspense fallback={<RootLayout />}>
+          <Routes>
+            <Route path="/" element={<RootLayout />}>
+              <Route index element={<Home />} />
+              <Route path="/traineediscount" element={<TraineeDiscount />} />
+              <Route path="/userguide" element={<UserGuide />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/blogs/:blogId" element={<Blog />} />
+            </Route>
 
-          <Route path="/support" element={<Support />} />
+            <Route path="/support" element={<Support />} />
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }

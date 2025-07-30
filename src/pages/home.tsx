@@ -10,6 +10,7 @@ import Contact from "../components/home/contact";
 import Press from "../components/home/press";
 import FAQ from "../components/home/faq";
 import ReactGA from "react-ga4";
+import Blogs from "../components/home/blogs";
 
 export default function Home() {
   ReactGA.send({ hitType: "pageview", page: window.location.pathname });
@@ -19,7 +20,7 @@ export default function Home() {
       <Hero />
       <Solutions />
       <Research />
-      {/* <Videos /> */}
+      <Blogs />
       <DownloadApp />
       <Quotes />
       <Pricing />
