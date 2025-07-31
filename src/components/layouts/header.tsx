@@ -126,6 +126,10 @@ const navData = [
     title: "FAQs",
   },
   {
+    link: "/blogs",
+    title: "Blog",
+  },
+  {
     link: "/#contact",
     title: "Contact",
   },
