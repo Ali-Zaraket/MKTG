@@ -6,13 +6,13 @@ import ReactGA from "react-ga4";
 export default function Hero() {
   return (
     <Wrapper>
-      <div className="sm:py-10">
-        <div className="flex md:flex-nowrap flex-wrap items-start py-5 gap-8 mt-6">
+      <div className="sm:py-2">
+        <div className="flex md:flex-nowrap flex-wrap items-center py-5 gap-8 mt-6">
           <div className="mt-0 md:mt-24 max-w-[750px]">
-            <h1 className="font-display text-3xl tracking-tight sm:text-4xl md:text-5xl capitalize text-primary">
+            <h1 className="font-display text-3xl tracking-tight sm:text-3xl md:text-4xl capitalize text-primary">
               The new standard in clinical <br /> photography
             </h1>
-            <h3 className="text-2xl mt-8">
+            <h3 className="text-lg mt-8">
               Capture, manage, and secure high-quality patient photos with ease. Whether you're building
               before-and-after galleries, presenting podium talks, publishing research, or simply ensuring consistent
               documentation—ImageAssist is your go-to app.
@@ -40,7 +40,7 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          <div className="">
+          <div className="min-w-[40%]">
             <img src="/hero.png" alt="" width="1280" height="300" />
           </div>
         </div>
